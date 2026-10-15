@@ -1,0 +1,1023 @@
+<!doctype html><html><head><meta charset=utf8><meta name=viewport content="width=device-width,initial-scale=1,viewport-fit=cover"><style>:root{color-scheme:light;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}html{scroll-padding-top:env(safe-area-inset-top,0px)}body{margin:0;padding:0;font:14px -apple-system,BlinkMacSystemFont,sans-serif;background:#fff;color:#000}img{max-width:100%}[hidden]:not([hidden=until-found i]){display:none!important}</style></head><body>
+<title>Abdul Rahman El Moughrabi</title>
+<meta name="theme-color" content="#090C12">
+<meta name="description" content="Technology leader, full-stack engineer and AI quality specialist based in Kuwait.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,300..800&family=Geist:wght@300..700&family=Geist+Mono:wght@400;500&family=Readex+Pro:wght@300..700&display=swap">
+<link rel="preconnect" href="https://cdnjs.cloudflare.com">
+<style>
+/* Layout: an engineer's logbook in one committed dark look. A live signal field opens the page; chapters alternate between bento grids, sticky stacks and scroll-scrubbed type so no two sections share a layout. */
+:root{
+  --ink:#090C12;
+  --panel:#0F141E;
+  --panel-2:#141A26;
+  --shell:rgba(255,255,255,.022);
+  --line:rgba(205,220,255,.085);
+  --line-2:rgba(205,220,255,.16);
+  --fg:#E9EDF4;
+  --soft:#C3CAD6;
+  --muted:#8C96A8;
+  --dim:#7A8597;
+  --signal:#F2B34A;
+  --signal-soft:rgba(242,179,74,.13);
+  --ice:#86D3FF;
+  --ice-soft:rgba(134,211,255,.11);
+  --display:"Bricolage Grotesque", "Avenir Next", "Segoe UI", system-ui, sans-serif;
+  --body:"Geist", "Helvetica Neue", "Segoe UI", system-ui, sans-serif;
+  --mono:"Geist Mono", ui-monospace, "SFMono-Regular", Menlo, Consolas, monospace;
+  --ease:cubic-bezier(.32,.72,0,1);
+  --spring:cubic-bezier(.2,1.25,.4,1);
+  --gutter:clamp(16px, 4vw, 56px);
+  --max:1240px;
+  --r:28px;
+  --arabic:"Readex Pro", "Segoe UI", Tahoma, system-ui, sans-serif;
+  color-scheme:dark;
+}
+:lang(ar) body,:lang(ar) h1,:lang(ar) h2,:lang(ar) h3,:lang(ar) .mono,:lang(ar) .eyebrow,:lang(ar) .btn,:lang(ar) .statement,:lang(ar) .quote p,:lang(ar) .st .v,:lang(ar) .yrs,:lang(ar) .academic .big,:lang(ar) .edu .rk b,:lang(ar) .rule b,:lang(ar) .step b,:lang(ar) .flow b,:lang(ar) .pillar b,:lang(ar) .cert b,:lang(ar) .track span,:lang(ar) .menu a,:lang(ar) .mailbox .addr,:lang(ar) .copy{font-family:var(--arabic)}
+:lang(ar) .mono,:lang(ar) .eyebrow,:lang(ar) .tag,:lang(ar) .pillar span,:lang(ar) .cap .sub,:lang(ar) .step b span,:lang(ar) .cert .mono,:lang(ar) .go{letter-spacing:0;text-transform:none;font-size:.86rem}
+:lang(ar) body{line-height:1.85}
+:lang(ar) h1,:lang(ar) h2,:lang(ar) h3,:lang(ar) .statement,:lang(ar) .name,:lang(ar) .head h2,:lang(ar) .contact h2,:lang(ar) .job h3,:lang(ar) .prod h3,:lang(ar) .rule b{letter-spacing:0}
+:lang(ar) .name{line-height:1.12;font-size:clamp(2.6rem, 8.4vw, 7.6rem)}
+:lang(ar) .head h2,:lang(ar) .contact h2{line-height:1.25}
+:lang(ar) .statement,:lang(ar) .quote p{line-height:1.45}
+:lang(ar) .name .ln{padding-bottom:.12em;margin-bottom:-.12em}
+:lang(ar) .wd{padding-bottom:.25em;margin-bottom:-.25em}
+.lang{display:inline-flex;align-items:center;height:36px;padding:0 14px;border-radius:999px;border:1px solid var(--line-2);background:transparent;color:var(--fg);font-family:var(--arabic);font-size:.86rem;cursor:pointer;white-space:nowrap;transition:background .4s var(--ease), border-color .4s var(--ease)}
+.lang:hover{background:rgba(255,255,255,.06);border-color:var(--fg)}
+:lang(ar) .lang{font-family:var(--body)}
+.lang.big{display:none;align-self:flex-start;height:46px;padding:0 20px;font-size:1rem;margin-top:12px}
+@media (max-width:940px){.nav .lang{display:none}.lang.big{display:inline-flex}}
+[dir=rtl] .job li::before{left:auto;right:0}
+[dir=rtl] .rule:hover b{translate:-10px 0}
+[dir=rtl] .rule .arr svg,[dir=rtl] .btn .ico svg,[dir=rtl] .go svg{transform:scaleX(-1)}
+[dir=rtl] .rule:hover .arr{transform:rotate(45deg)}
+[dir=rtl] .btn:hover .ico{transform:translate(-3px,-2px) scale(1.06)}
+[dir=rtl] .go:hover svg{transform:scaleX(-1) translate(2px,-2px)}
+[dir=rtl] .cert:hover{transform:translateX(-8px)}
+[dir=rtl] .job .bigmark{right:auto;left:-.06em}
+[dir=rtl] .prod .ini{right:auto;left:16px}
+[dir=rtl] .prod:hover .ini{transform:translate(8px,6px) scale(1.06)}
+[dir=rtl] .track{animation-direction:reverse}
+[dir=rtl] .flow .seg{transform-origin:100% 50%}
+[dir=rtl] .prog{transform-origin:100% 50%}
+[dir=rtl] .st .v small{margin-left:0;margin-right:4px}
+[dir=rtl] .reach b,[dir=rtl] .mailbox .addr,[dir=rtl] .mail-line{direction:ltr;unicode-bidi:isolate;display:inline-block}
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%;-webkit-tap-highlight-color:transparent}
+a,button{touch-action:manipulation}
+.skip{position:fixed;inset-inline-start:16px;top:12px;transform:translateY(-220%);z-index:90;background:var(--signal);color:var(--ink);padding:12px 18px;border-radius:999px;font-weight:500;text-decoration:none;transition:transform .4s var(--ease)}
+.skip:focus{transform:none}
+section[id]{scroll-margin-top:96px}
+html{scroll-behavior:smooth}
+@media (prefers-reduced-motion: reduce){html{scroll-behavior:auto}}
+body{background:var(--ink);color:var(--fg);font-family:var(--body);font-size:16px;line-height:1.6;overflow-x:hidden;-webkit-font-smoothing:antialiased}
+body.locked{overflow:hidden}
+.menu{overscroll-behavior:contain}
+::selection{background:var(--signal);color:var(--ink)}
+a{color:inherit}
+:focus-visible{outline:2px solid var(--signal);outline-offset:3px;border-radius:6px}
+h1,h2,h3{font-family:var(--display);font-weight:600;letter-spacing:-.02em;line-height:1.04;text-wrap:balance;margin:0}
+p{margin:0}
+.wrap{max-width:var(--max);margin-inline:auto;padding-inline:var(--gutter)}
+.mono{font-family:var(--mono);font-size:.74rem;letter-spacing:.14em;text-transform:uppercase}
+.eyebrow{display:inline-flex;align-items:center;padding:6px 14px;border-radius:999px;border:1px solid var(--line);background:var(--shell);font-family:var(--mono);font-size:.68rem;letter-spacing:.2em;text-transform:uppercase;color:var(--signal)}
+
+/* double-bezel: an outer machined shell drawn with shadows, so tilt and stacking transforms still apply to one element */
+.bz{border:1px solid var(--line);border-radius:var(--r);background:var(--panel);box-shadow:0 0 0 6px var(--shell),0 0 0 7px var(--line),inset 0 1px 0 rgba(255,255,255,.06);transition:border-color .6s var(--ease), box-shadow .6s var(--ease), background .6s var(--ease)}
+.bz{position:relative}
+.bz::before{content:"";position:absolute;inset:-1px;border-radius:inherit;padding:1px;background:radial-gradient(260px circle at var(--mx,50%) var(--my,50%), rgba(242,179,74,.75), rgba(134,211,255,.25) 40%, transparent 70%);-webkit-mask:linear-gradient(#000 0 0) content-box, linear-gradient(#000 0 0);mask:linear-gradient(#000 0 0) content-box, linear-gradient(#000 0 0);-webkit-mask-composite:xor;mask-composite:exclude;opacity:0;transition:opacity .5s var(--ease);pointer-events:none;z-index:2}
+.bz::before{display:none}
+.bz:hover::before{display:block;opacity:1}
+.bz:hover{border-color:var(--line-2);box-shadow:0 0 0 6px rgba(255,255,255,.035),0 0 0 7px var(--line-2),inset 0 1px 0 rgba(255,255,255,.09)}
+
+.grain{position:fixed;inset:0;pointer-events:none;z-index:40;opacity:.045;transform:translateZ(0);background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='160' height='160'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.9' numOctaves='2' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E")}
+.glow{position:fixed;left:0;top:0;width:560px;height:560px;margin:-280px 0 0 -280px;border-radius:50%;pointer-events:none;z-index:1;background:radial-gradient(circle, rgba(242,179,74,.085), rgba(134,211,255,.04) 42%, transparent 68%);opacity:0;transition:opacity .6s var(--ease)}
+@media (pointer:fine){.glow.on{opacity:1}}
+
+/* floating island nav */
+.nav{position:fixed;z-index:60;top:calc(env(safe-area-inset-top,0px) + 14px);left:50%;transform:translateX(-50%);width:max-content;max-width:calc(100% - 24px);display:flex;align-items:center;gap:6px;padding:6px;border-radius:999px;background:rgba(15,20,30,.62);backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px);border:1px solid var(--line);box-shadow:inset 0 1px 0 rgba(255,255,255,.07),0 18px 40px -20px rgba(0,0,0,.6);overflow:hidden;will-change:transform}
+.mark{display:flex;align-items:center;gap:10px;padding:0;padding-inline:4px 12px;text-decoration:none;font-family:var(--mono);font-size:.72rem;letter-spacing:.16em;white-space:nowrap}
+.mark b{display:grid;place-items:center;width:34px;height:34px;border-radius:50%;font-family:var(--display);font-size:.78rem;letter-spacing:0;color:var(--ink);background:var(--signal)}
+.links{display:flex;gap:2px;list-style:none;margin:0;padding:0}
+.links a{display:block;padding:9px 14px;border-radius:999px;text-decoration:none;font-size:.86rem;color:var(--muted);white-space:nowrap;transition:color .4s var(--ease), background .4s var(--ease)}
+.links a:hover,.links a.active{color:var(--fg);background:rgba(255,255,255,.06)}
+.nav-cta{text-decoration:none;font-size:.86rem;font-weight:500;padding:9px 18px;border-radius:999px;background:var(--fg);color:var(--ink);white-space:nowrap;transition:transform .4s var(--spring)}
+.nav-cta:active{transform:scale(.97)}
+.nav{transition:transform .6s var(--ease), background .4s var(--ease)}
+.nav.away{transform:translate(-50%,-140%)}
+.nav.solid{background:rgba(15,20,30,.84)}
+.prog{position:absolute;left:18px;right:18px;bottom:0;height:2px;border-radius:2px;transform-origin:0 50%;transform:scaleX(0);background:linear-gradient(90deg,var(--ice),var(--signal))}
+.burger{display:none;width:42px;height:42px;border-radius:50%;border:0;background:rgba(255,255,255,.07);cursor:pointer;position:relative}
+.burger i{position:absolute;left:13px;right:13px;height:1.5px;border-radius:2px;background:var(--fg);transition:transform .6s var(--ease), top .6s var(--ease)}
+.burger i:first-child{top:17px}.burger i:last-child{top:24px}
+.burger[aria-expanded="true"] i:first-child{top:20.5px;transform:rotate(45deg)}
+.burger[aria-expanded="true"] i:last-child{top:20.5px;transform:rotate(-45deg)}
+@media (max-width:940px){
+  .links,.nav-cta{display:none}
+  .burger{display:block}
+  .nav{width:calc(100% - 24px);justify-content:space-between}
+}
+.menu{position:fixed;inset:0;z-index:55;display:flex;flex-direction:column;justify-content:center;gap:6px;padding:calc(env(safe-area-inset-top,0px) + 96px) 28px calc(env(safe-area-inset-bottom,0px) + 40px);background:rgba(9,12,18,.86);backdrop-filter:blur(28px);-webkit-backdrop-filter:blur(28px);opacity:0;visibility:hidden;transition:opacity .6s var(--ease), visibility 0s linear .6s}
+.menu.open{opacity:1;visibility:visible;transition:opacity .6s var(--ease)}
+.menu a{font-family:var(--display);font-size:clamp(2.2rem,10vw,3.4rem);font-weight:600;letter-spacing:-.03em;text-decoration:none;line-height:1.15;transform:translateY(40px);opacity:0;transition:transform .8s var(--ease), opacity .8s var(--ease), color .3s}
+.menu a:hover{color:var(--signal)}
+.menu.open a{transform:none;opacity:1}
+.menu.open a:nth-child(2){transition-delay:.05s}.menu.open a:nth-child(3){transition-delay:.1s}.menu.open a:nth-child(4){transition-delay:.15s}.menu.open a:nth-child(5){transition-delay:.2s}.menu.open a:nth-child(6){transition-delay:.25s}.menu.open a:nth-child(7){transition-delay:.3s}
+.menu .mail-line{margin-top:28px;color:var(--muted)}
+
+/* buttons with nested trailing icon */
+.btn{display:inline-flex;align-items:center;gap:14px;padding:8px;padding-inline-start:24px;border-radius:999px;text-decoration:none;font-weight:500;font-size:.96rem;border:1px solid var(--line-2);background:rgba(15,20,30,.55);transition:transform .5s var(--spring), border-color .4s var(--ease), background .4s var(--ease);white-space:nowrap}
+.btn .ico{display:grid;place-items:center;width:38px;height:38px;border-radius:50%;background:rgba(255,255,255,.08);transition:transform .6s var(--spring)}
+.btn .ico svg{width:15px;height:15px}
+.btn:hover .ico{transform:translate(3px,-2px) scale(1.06)}
+.btn:active{transform:scale(.97)}
+.btn.primary{background:var(--signal);border-color:var(--signal);color:var(--ink)}
+.btn.primary .ico{background:rgba(9,12,18,.14)}
+
+/* hero */
+.hero{position:relative;min-height:min(100dvh,880px);display:flex;align-items:center;padding-top:calc(118px + env(safe-area-inset-top,0px));padding-bottom:72px;overflow:hidden;isolation:isolate}
+#field{position:absolute;inset:0;width:100%;height:100%;z-index:-1}
+.hero::after{content:"";position:absolute;inset:auto 0 0;height:220px;background:linear-gradient(transparent,var(--ink));z-index:-1;pointer-events:none}
+.hero .wrap{width:100%;will-change:transform,opacity}
+.status{display:inline-flex;align-items:center;gap:10px;padding:7px 16px 7px 12px;border:1px solid var(--line);border-radius:999px;background:rgba(15,20,30,.6);color:var(--soft);font-size:.86rem}
+.pulse{width:8px;height:8px;border-radius:50%;background:var(--signal);box-shadow:0 0 0 0 rgba(242,179,74,.6);animation:pulse 2.2s infinite}
+@keyframes pulse{70%{box-shadow:0 0 0 10px rgba(242,179,74,0)}100%{box-shadow:0 0 0 0 rgba(242,179,74,0)}}
+.name{margin-top:30px;font-size:clamp(2.8rem, 9.2vw, 8.6rem);font-weight:700;letter-spacing:-.05em;line-height:.9;max-width:none}
+.name > span{display:block}
+.name .ln{overflow:hidden;padding-bottom:.08em;margin-bottom:-.08em}
+.name .ln > span{display:block;will-change:transform}
+.curtain{position:fixed;inset:0;z-index:95;background:var(--ink);display:grid;place-items:center;transform-origin:50% 100%}
+.curtain b{font-family:var(--mono);font-size:.78rem;letter-spacing:.3em;color:var(--signal);opacity:0}
+.curtain i{position:absolute;left:50%;bottom:38%;width:min(320px,60vw);height:1px;margin-left:calc(min(320px,60vw) / -2);background:rgba(205,220,255,.14);overflow:hidden}
+.curtain i::after{content:"";position:absolute;inset:0;background:var(--signal);transform:scaleX(0);transform-origin:0 50%}
+.name .l2{color:transparent;-webkit-text-stroke:1.5px var(--fg);background:linear-gradient(90deg,var(--fg),var(--fg)) 0 0/0% 100% no-repeat;-webkit-background-clip:text;background-clip:text}
+.name .l2 em{font-style:normal;color:var(--signal);-webkit-text-stroke:0}
+.lede{max-width:46ch;margin-top:30px;font-size:clamp(1.1rem,1.8vw,1.36rem);line-height:1.5;color:var(--soft)}
+.lede b{color:var(--fg);font-weight:500}
+.ctas{display:flex;flex-wrap:wrap;gap:12px;margin-top:36px}
+
+/* marquee */
+.marquee{border-block:1px solid var(--line);overflow:hidden;padding-block:22px;background:var(--panel)}
+.track{display:flex;width:max-content;animation:slide 42s linear infinite}
+.track span{font-family:var(--display);font-size:clamp(1.3rem,2.6vw,2.1rem);font-weight:500;white-space:nowrap;display:flex;align-items:center;gap:52px;padding-inline-end:52px;color:var(--muted)}
+.track span::after{content:"";width:9px;height:9px;border-radius:2px;background:var(--signal);transform:rotate(45deg)}
+.track span:nth-child(odd){color:var(--fg)}
+@keyframes slide{to{transform:translateX(-50%)}}
+.marquee:hover .track{animation-play-state:paused}
+
+/* chapters */
+section.ch{position:relative;padding-block:clamp(110px,14vw,190px)}
+section.ch + section.ch{border-top:1px solid var(--line)}
+.head{display:flex;flex-direction:column;gap:22px;margin-bottom:clamp(48px,7vw,84px);max-width:860px}
+.head h2{font-size:clamp(2.3rem,5.4vw,4.6rem);letter-spacing:-.035em}
+.head p{max-width:58ch;color:var(--muted);font-size:1.08rem}
+.wd{display:inline-block;overflow:hidden;vertical-align:top;padding-bottom:.12em;margin-bottom:-.12em}
+.wd>span{display:inline-block;will-change:transform}
+
+/* about: scrubbed statement + stats bento */
+.statement{font-family:var(--display);font-size:clamp(1.7rem,3.9vw,3.25rem);font-weight:500;line-height:1.16;letter-spacing:-.025em;max-width:24ch;text-wrap:pretty}
+.statement .hl{color:var(--signal)}
+.stats{display:grid;grid-template-columns:repeat(4,1fr);grid-template-rows:auto auto;grid-auto-flow:dense;gap:22px;margin-top:clamp(56px,8vw,96px)}
+.st{position:relative;padding:28px;overflow:hidden;min-width:0;display:flex;flex-direction:column;gap:10px}
+.st .v{font-family:var(--display);font-size:clamp(2.4rem,4.4vw,3.6rem);font-weight:600;letter-spacing:-.04em;line-height:1;font-variant-numeric:tabular-nums}
+.st .v small{font-size:.42em;color:var(--muted);font-weight:400;margin-left:4px;letter-spacing:0}
+.st .k{color:var(--muted)}
+.st p{color:var(--soft);font-size:.95rem;margin-top:auto}
+.st.rank{grid-column:span 2;grid-row:span 2;background:radial-gradient(90% 80% at 0% 0%, var(--signal-soft), transparent 60%), var(--panel)}
+.st.rank .v{font-size:clamp(3.6rem,8vw,6.4rem)}
+.st.tall{grid-row:span 2;background:radial-gradient(100% 70% at 100% 100%, var(--ice-soft), transparent 65%), var(--panel)}
+.st.tall .v{font-size:clamp(3.4rem,6vw,5.2rem);margin-top:auto}
+.dots{display:grid;grid-template-columns:repeat(32,1fr);gap:5px;margin-top:18px}
+.dots i{aspect-ratio:1;border-radius:50%;background:rgba(205,220,255,.1);max-width:100%;transition:background .4s}
+.dots i.me{background:var(--signal);box-shadow:0 0 0 3px rgba(242,179,74,.22),0 0 16px rgba(242,179,74,.65);animation:pulse 2.2s infinite}
+@media (max-width:900px){.stats{grid-template-columns:1fr 1fr}.st.rank{grid-column:span 2;grid-row:auto}.st.tall{grid-row:auto}}
+@media (max-width:520px){.stats{grid-template-columns:1fr}.st.rank{grid-column:auto}.dots{grid-template-columns:repeat(16,1fr)}}
+
+/* career sticky stack */
+.job.bz{box-shadow:none}
+.job.bz:hover{box-shadow:none}
+.stack{display:grid;gap:28px;padding-bottom:20px}
+.job{position:relative;padding:clamp(26px,3.6vw,44px);overflow:hidden;min-width:0;background:linear-gradient(180deg,var(--panel-2),var(--panel));transform-origin:50% 0;will-change:transform,opacity}
+@media (min-width:900px) and (prefers-reduced-motion: no-preference){
+  .job{position:sticky;top:calc(96px + var(--i) * 20px)}
+}
+.job-top{display:flex;justify-content:space-between;align-items:flex-start;gap:20px;flex-wrap:wrap}
+.yrs{font-family:var(--display);font-size:clamp(1.1rem,1.6vw,1.3rem);font-weight:500;color:var(--signal);font-variant-numeric:tabular-nums}
+.tag{padding:4px 12px;border-radius:999px;background:var(--signal-soft);color:var(--signal);font-family:var(--mono);font-size:.66rem;letter-spacing:.14em;text-transform:uppercase}
+.job h3{font-size:clamp(1.9rem,3.6vw,2.9rem);letter-spacing:-.03em;margin-top:18px}
+.job .role{color:var(--ice);margin-top:10px}
+.job ul{margin:26px 0 0;padding:0;list-style:none;display:grid;grid-template-columns:1fr 1fr;gap:18px 36px;color:var(--soft)}
+.job li{position:relative;padding-inline-start:22px}
+.job li::before{content:"";position:absolute;left:0;top:.75em;width:10px;height:1px;background:var(--signal)}
+.job .fig{color:var(--fg);font-weight:500;font-variant-numeric:tabular-nums}
+.job.single ul{grid-template-columns:1fr}
+@media (max-width:760px){.job ul{grid-template-columns:1fr}}
+.job .bigmark{will-change:transform;position:absolute;right:-.06em;bottom:-.28em;font-family:var(--display);font-weight:800;font-size:clamp(7rem,15vw,13rem);line-height:1;color:transparent;-webkit-text-stroke:1px rgba(205,220,255,.06);pointer-events:none;user-select:none}
+
+.rules{margin-top:clamp(80px,10vw,130px);overflow:hidden}
+.rules h3.lbl{font-family:var(--mono);font-size:.74rem;letter-spacing:.14em;text-transform:uppercase;color:var(--muted);font-weight:400;margin-bottom:12px}
+.rule{display:grid;grid-template-columns:minmax(0,1.1fr) minmax(0,1fr) 48px;gap:24px;align-items:center;padding:30px 0;border-top:1px solid var(--line);transition:padding .6s var(--ease)}
+.rule:last-child{border-bottom:1px solid var(--line)}
+.rule b{font-family:var(--display);font-size:clamp(1.7rem,3.4vw,2.8rem);font-weight:600;letter-spacing:-.03em;line-height:1.05;transition:color .5s var(--ease), translate .6s var(--ease)}
+.rule p{color:var(--muted)}
+.rule .arr{width:44px;height:44px;border-radius:50%;border:1px solid var(--line-2);display:grid;place-items:center;color:var(--signal);transition:transform .6s var(--spring), background .4s var(--ease)}
+.rule .arr svg{width:15px;height:15px}
+.rule:hover b{color:var(--signal);translate:10px 0}
+.rule:hover .arr{transform:rotate(-45deg);background:var(--signal-soft)}
+@media (max-width:760px){.rule{grid-template-columns:1fr}.rule .arr{display:none}}
+
+/* AI */
+.ai-grid{display:grid;grid-template-columns:1.12fr .88fr;gap:30px;align-items:start}
+@media (max-width:900px){.ai-grid{grid-template-columns:1fr}}
+.col{display:grid;gap:30px;min-width:0}
+.card{position:relative;padding:clamp(24px,3vw,34px);overflow:hidden;min-width:0}
+.card .mono{color:var(--muted)}
+.card h3{font-size:1.6rem;margin:12px 0 8px}
+.card .meta{color:var(--ice);margin-bottom:16px}
+.card p{color:var(--soft)}
+.spot::after{content:"";position:absolute;inset:0;pointer-events:none;border-radius:inherit;background:radial-gradient(420px circle at var(--mx,50%) var(--my,50%), rgba(242,179,74,.085), transparent 60%);opacity:0;transition:opacity .5s var(--ease)}
+.spot:hover::after{opacity:1}
+.loop{position:sticky;top:96px;padding:30px;overflow:hidden;background:radial-gradient(120% 90% at 50% 0%, var(--panel-2), var(--panel))}
+.loop svg{display:block;width:100%;max-width:330px;margin:8px auto 0;height:auto}
+.ring-spin{transform-origin:150px 150px;animation:spin 14s linear infinite}
+.ring-dash{transform-origin:150px 150px;animation:spin 40s linear infinite reverse}
+@keyframes spin{to{transform:rotate(360deg)}}
+.steps{display:grid;margin-top:18px}
+.step{display:grid;grid-template-columns:96px 1fr;gap:12px;padding:14px 0;border-top:1px solid var(--line)}
+.step b{font-family:var(--display);font-size:1.15rem;font-weight:600}
+.step b span{display:block;font-family:var(--mono);font-size:.66rem;letter-spacing:.14em;color:var(--signal);font-weight:400;margin-bottom:2px}
+.step p{color:var(--muted);font-size:.94rem}
+.academic{display:grid;grid-template-columns:1.2fr 1fr;grid-auto-flow:dense;gap:30px;margin-top:30px}
+.academic .card:first-child{grid-row:span 2;display:flex;flex-direction:column;background:radial-gradient(90% 70% at 100% 0%, var(--ice-soft), transparent 60%), var(--panel)}
+.academic .big{font-family:var(--display);font-size:clamp(2.6rem,4vw,3.4rem);font-weight:600;letter-spacing:-.04em;color:var(--signal);line-height:1;margin:16px 0 12px;font-variant-numeric:tabular-nums}
+.academic .card:first-child .big{font-size:clamp(4rem,9vw,7.2rem);margin-top:auto;padding-top:40px}
+.academic h3{font-size:1.3rem;margin:0 0 6px}
+.academic p{color:var(--muted)}
+.duo{display:flex;gap:28px;flex-wrap:wrap;align-items:baseline}
+@media (max-width:760px){.academic{grid-template-columns:1fr}.academic .card:first-child{grid-row:auto}}
+.quote{margin-top:clamp(70px,9vw,120px);display:grid;grid-template-columns:200px 1fr;gap:30px}
+.quote .mono{color:var(--ice);padding-top:14px}
+.quote p{font-family:var(--display);font-size:clamp(1.4rem,2.8vw,2.3rem);line-height:1.22;letter-spacing:-.02em;max-width:34ch}
+@media (max-width:760px){.quote{grid-template-columns:1fr;gap:14px}}
+
+/* products bento */
+.bento{display:grid;grid-template-columns:repeat(4,1fr);grid-auto-flow:dense;gap:26px}
+.prod{position:relative;display:flex;flex-direction:column;gap:10px;padding:28px;overflow:hidden;min-height:240px;transform-style:preserve-3d;transition:transform .7s var(--ease), border-color .6s var(--ease), box-shadow .6s var(--ease);min-width:0;isolation:isolate}
+.prod .mono{color:var(--muted)}
+.prod h3{font-size:1.7rem;letter-spacing:-.03em}
+.prod p{color:var(--muted);font-size:.95rem;margin-top:auto}
+.prod .ini{position:absolute;right:16px;top:4px;font-family:var(--display);font-weight:800;font-size:6.6rem;line-height:1;color:transparent;-webkit-text-stroke:1px rgba(205,220,255,.09);z-index:-1;transition:transform .9s var(--ease), -webkit-text-stroke-color .6s}
+.prod:hover .ini{transform:translate(-8px,6px) scale(1.06);-webkit-text-stroke-color:rgba(242,179,74,.35)}
+.prod.feat{grid-column:span 2;grid-row:span 2;padding:clamp(28px,3.4vw,42px);background:radial-gradient(90% 70% at 85% 0%, rgba(242,179,74,.17), transparent 60%), radial-gradient(70% 60% at 0% 100%, var(--ice-soft), transparent 60%), var(--panel-2)}
+.prod.feat h3{font-size:clamp(2.4rem,4.4vw,3.8rem);letter-spacing:-.04em;margin-top:6px}
+.prod.feat .lead{color:var(--soft);font-size:1.06rem;max-width:44ch;margin-top:8px}
+.chips{display:flex;flex-wrap:wrap;gap:8px;margin-top:auto;padding-top:22px}
+.chip{padding:6px 13px;border:1px solid var(--line);border-radius:999px;font-size:.82rem;color:var(--soft);background:rgba(9,12,18,.45)}
+.p-dots{background:radial-gradient(rgba(205,220,255,.07) 1px, transparent 1.5px) 0 0/16px 16px, var(--panel)}
+.p-lines{background:repeating-linear-gradient(135deg, transparent 0 11px, rgba(205,220,255,.028) 11px 12px), var(--panel)}
+.p-warm{background:radial-gradient(80% 70% at 100% 100%, rgba(242,179,74,.10), transparent 60%), var(--panel)}
+.p-cool{background:radial-gradient(80% 70% at 0% 0%, var(--ice-soft), transparent 60%), var(--panel)}
+.live{display:inline-flex;align-items:center;gap:8px;color:var(--signal)!important}
+.live::before{content:"";width:7px;height:7px;border-radius:50%;background:var(--signal);animation:pulse 2.2s infinite}
+@media (max-width:1000px){.bento{grid-template-columns:repeat(2,1fr)}}
+@media (max-width:600px){.bento{grid-template-columns:1fr}.prod.feat{grid-column:auto;grid-row:auto}}
+.flow{display:grid;grid-template-columns:repeat(4,1fr);margin-top:clamp(56px,7vw,80px);position:relative}
+.flow::before{content:"";position:absolute;left:0;right:0;top:19px;height:1px;background:var(--line)}
+.flow div{position:relative;padding-inline-end:22px;min-width:0}
+.flow i{display:grid;place-items:center;width:39px;height:39px;border-radius:50%;background:var(--ink);border:1px solid var(--line-2);font-style:normal;font-family:var(--mono);font-size:.7rem;color:var(--signal);position:relative}
+.flow b{display:block;font-family:var(--display);font-size:1.35rem;font-weight:600;margin:20px 0 6px}
+.flow p{color:var(--muted);font-size:.93rem}
+@media (max-width:760px){.flow{grid-template-columns:1fr 1fr;gap:34px 0}.flow::before,.flow .seg{display:none}}
+
+/* engineering bento */
+.eng{display:grid;grid-template-columns:repeat(3,1fr);grid-auto-flow:dense;gap:26px}
+.repo{display:flex;flex-direction:column;gap:12px}
+.repo .top{display:flex;justify-content:space-between;align-items:center;gap:12px}
+.repo .top svg{width:22px;height:22px;color:var(--muted);flex:none}
+.repo h3{font-size:2rem;letter-spacing:-.03em;margin:4px 0 0}
+.repo p{color:var(--soft)}
+.repo .chips{padding-top:8px}
+.go{margin-top:8px;align-self:flex-start;display:inline-flex;gap:10px;align-items:center;color:var(--ice);text-decoration:none;font-family:var(--mono);font-size:.72rem;letter-spacing:.14em;text-transform:uppercase;transition:color .3s, gap .5s var(--ease)}
+.go:hover{color:var(--signal);gap:14px}
+.repo.wide{grid-column:span 2;background:radial-gradient(80% 90% at 100% 0%, var(--signal-soft), transparent 60%), var(--panel)}
+.repo.wide h3{font-size:clamp(2.4rem,4vw,3.4rem)}
+.repo.full{grid-column:span 3;display:grid;grid-template-columns:1fr 1fr;gap:12px 40px;align-items:end;background:radial-gradient(60% 120% at 0% 100%, var(--ice-soft), transparent 60%), var(--panel)}
+.repo.full .left{display:flex;flex-direction:column;gap:12px}
+.pillars{grid-row:span 2;padding:30px;display:flex;flex-direction:column;background:var(--panel-2)}
+.pillars .mono{color:var(--muted)}
+.pillar{padding:22px 0;border-top:1px solid var(--line)}
+.pillar:first-of-type{margin-top:18px}
+.pillar span{font-family:var(--mono);font-size:.66rem;letter-spacing:.14em;text-transform:uppercase;color:var(--signal)}
+.pillar b{display:block;font-family:var(--display);font-size:1.4rem;font-weight:600;letter-spacing:-.02em;margin:6px 0}
+.pillar p{color:var(--muted);font-size:.93rem}
+@media (max-width:980px){.eng{grid-template-columns:1fr 1fr}.repo.wide,.repo.full{grid-column:span 2}.pillars{grid-row:auto;grid-column:span 2}}
+@media (max-width:640px){.eng{grid-template-columns:1fr}.repo.wide,.repo.full,.pillars{grid-column:auto}.repo.full{grid-template-columns:1fr}}
+
+/* capabilities */
+.caps{display:grid;grid-template-columns:repeat(6,1fr);gap:26px}
+.cap{position:relative;padding:30px;min-width:0;grid-column:span 2;display:flex;flex-direction:column;gap:8px}
+.cap:nth-child(1),.cap:nth-child(2){grid-column:span 3}
+.cap.wide-cap{grid-column:span 6;background:radial-gradient(60% 140% at 100% 50%, var(--signal-soft), transparent 60%), var(--panel)}
+.cap .sub{font-family:var(--mono);font-size:.68rem;letter-spacing:.14em;text-transform:uppercase;color:var(--ice)}
+.cap h3{font-size:1.55rem;letter-spacing:-.025em}
+.cap p{color:var(--muted);font-size:.95rem;margin-top:6px}
+.cap .tools{display:flex;flex-wrap:wrap;gap:6px;margin-top:auto;padding-top:16px}
+.cap .tools span{font-family:var(--mono);font-size:.7rem;padding:4px 10px;border-radius:6px;background:rgba(255,255,255,.04);color:var(--soft)}
+@media (max-width:900px){.caps{grid-template-columns:1fr 1fr}.cap,.cap:nth-child(1),.cap:nth-child(2){grid-column:auto}.cap.wide-cap{grid-column:span 2}}
+@media (max-width:600px){.cap.wide-cap{grid-column:auto}}
+@media (max-width:600px){.caps{grid-template-columns:1fr}}
+
+/* credentials */
+.creds{display:grid;grid-template-columns:1fr 1fr;gap:30px;align-items:start}
+@media (max-width:900px){.creds{grid-template-columns:1fr}}
+.edu{position:sticky;top:96px;padding:clamp(28px,4vw,44px);overflow:hidden;background:radial-gradient(100% 80% at 0% 0%, var(--signal-soft), transparent 55%), var(--panel)}
+.edu h3{font-size:clamp(2rem,3.6vw,3rem);letter-spacing:-.035em;margin:16px 0 12px}
+.edu .meta{color:var(--muted)}
+.edu .rk{display:flex;align-items:baseline;gap:12px;margin-top:40px;padding-top:28px;border-top:1px solid var(--line)}
+.edu .rk b{font-family:var(--display);font-size:clamp(3.2rem,6vw,4.6rem);font-weight:700;letter-spacing:-.05em;line-height:.9}
+.edu .rk span{color:var(--muted)}
+@media (max-width:900px){.edu{position:relative;top:0}}
+.certs{display:grid;gap:26px}
+.cert{display:grid;grid-template-columns:auto 1fr;gap:6px 20px;padding:26px;align-items:start;transition:transform .7s var(--ease), border-color .6s var(--ease), box-shadow .6s var(--ease)}
+.cert:hover{transform:translateX(8px)}
+.cert .ic{grid-row:span 3;width:46px;height:46px;border-radius:14px;display:grid;place-items:center;background:var(--panel-2);border:1px solid var(--line);color:var(--signal)}
+.cert .ic svg{width:21px;height:21px}
+.cert b{font-family:var(--display);font-size:1.2rem;font-weight:600;line-height:1.25}
+.cert .mono{color:var(--ice);font-size:.66rem}
+.cert p{color:var(--muted);font-size:.93rem}
+
+/* contact */
+.contact{position:relative;padding-block:clamp(120px,15vw,200px);overflow:hidden;border-top:1px solid var(--line);isolation:isolate}
+.contact::before{content:"";position:absolute;left:50%;top:100%;width:min(1300px,170vw);aspect-ratio:1;transform:translate(-50%,-36%);border-radius:50%;background:radial-gradient(circle, rgba(242,179,74,.24), rgba(134,211,255,.08) 40%, transparent 66%);z-index:-1;animation:breathe 9s var(--ease) infinite alternate}
+@keyframes breathe{to{transform:translate(-50%,-40%) scale(1.06)}}
+.contact h2{font-size:clamp(2.8rem,8.4vw,7.6rem);letter-spacing:-.05em;line-height:.95;max-width:11ch;margin-top:24px}
+.contact h2 em{font-style:normal;color:var(--signal)}
+.mailbox{margin-top:48px;display:inline-flex;flex-wrap:wrap;align-items:center;gap:16px;padding:10px;padding-inline-start:28px;max-width:100%}
+.mailbox .addr{font-family:var(--display);font-size:clamp(1.15rem,3vw,2rem);font-weight:500;letter-spacing:-.01em;word-break:break-all;user-select:all;min-width:0}
+.copy{display:inline-flex;align-items:center;gap:10px;padding:12px 20px;border-radius:999px;border:0;background:var(--fg);color:var(--ink);font:inherit;font-size:.9rem;font-weight:500;cursor:pointer;transition:transform .5s var(--spring), background .4s var(--ease)}
+.copy:active{transform:scale(.96)}
+.copy.done{background:var(--signal)}
+.reach{display:grid;grid-template-columns:repeat(3,1fr);gap:26px;margin-top:56px}
+@media (max-width:760px){.reach{grid-template-columns:1fr}}
+.reach > *{padding:24px;text-decoration:none;display:block;min-width:0;background:rgba(15,20,30,.72)}
+.reach .mono{color:var(--muted);display:block;margin-bottom:8px}
+.reach b{font-weight:500;font-size:1.1rem;font-variant-numeric:tabular-nums;user-select:all}
+footer{border-top:1px solid var(--line);padding-block:30px;color:var(--dim)}
+footer .wrap{display:flex;justify-content:space-between;flex-wrap:wrap;gap:12px}
+
+/* scroll-driven reveals use translate/scale properties so they compose with hover transforms; resting state is fully visible */
+.js .rv{opacity:0}
+.flow i::after{content:"";position:absolute;inset:-5px;border-radius:50%;border:1px solid var(--signal);opacity:0}
+.flow div.on i{border-color:var(--signal);color:var(--ink);background:var(--signal)}
+.flow div.on i::after{animation:ring 1.4s var(--ease) 1}
+@keyframes ring{from{opacity:.9;transform:scale(.7)}to{opacity:0;transform:scale(1.9)}}
+.flow .seg{position:absolute;left:0;top:19px;height:1px;background:linear-gradient(90deg,var(--ice),var(--signal));transform-origin:0 50%;transform:scaleX(0);width:100%}
+.go svg{width:13px;height:13px;transition:transform .5s var(--spring)}
+.go:hover svg{transform:translate(2px,-2px)}
+@media (prefers-reduced-motion: reduce){
+  .track,.ring-spin,.ring-dash,.pulse,.live::before,.dots i.me,.contact::before{animation:none}
+}
+</style>
+
+<a class="skip" href="#about" data-ar="تخطَّ إلى المحتوى">Skip to content</a>
+<div class="curtain" id="curtain" aria-hidden="true"><b>ARM</b><i></i></div>
+<div class="grain" aria-hidden="true"></div>
+<div class="glow" aria-hidden="true"></div>
+
+<nav class="nav" aria-label="Main" data-ar-aria="التنقل الرئيسي">
+  <a href="#top" class="mark" translate="no"><b aria-hidden="true">ARM</b><span data-ar="المغربي">EL MOUGHRABI</span></a>
+  <ul class="links">
+    <li><a href="#about" data-ar="نبذة">About</a></li>
+    <li><a href="#career" data-ar="المسيرة">Career</a></li>
+    <li><a href="#ai" data-ar="الذكاء الاصطناعي والجودة">AI &amp; Quality</a></li>
+    <li><a href="#work" data-ar="الأعمال">Work</a></li>
+    <li><a href="#engineering" data-ar="الهندسة">Engineering</a></li>
+    <li><a href="#credentials" data-ar="المؤهلات">Credentials</a></li>
+  </ul>
+  <button class="lang" id="lang" type="button" lang="ar" aria-label="Switch to Arabic">العربية</button>
+  <a href="#contact" class="nav-cta" data-ar="تواصل">Contact</a>
+  <button class="burger" id="burger" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="menu"><i></i><i></i></button>
+  <div class="prog" aria-hidden="true"></div>
+</nav>
+
+<div class="menu" id="menu" aria-hidden="true">
+  <a href="#about" data-ar="نبذة">About</a>
+  <a href="#career" data-ar="المسيرة">Career</a>
+  <a href="#ai" data-ar="الذكاء الاصطناعي والجودة">AI &amp; Quality</a>
+  <a href="#work" data-ar="الأعمال">Work</a>
+  <a href="#engineering" data-ar="الهندسة">Engineering</a>
+  <a href="#credentials" data-ar="المؤهلات">Credentials</a>
+  <a href="#contact" data-ar="تواصل">Contact</a>
+  <button class="lang big" id="lang2" type="button" lang="ar" aria-label="Switch to Arabic">العربية</button>
+  <span class="mono mail-line" translate="no">abedmoghrabi@gmail.com</span>
+</div>
+
+<header class="hero" id="top">
+  <canvas id="field" aria-hidden="true"></canvas>
+  <div class="wrap">
+    <div class="status" data-ar-html="<span class=&quot;pulse&quot; aria-hidden=&quot;true&quot;></span>متاح لأدوار رئيس التقنية والقيادة التقنية"><span class="pulse" aria-hidden="true"></span>Open to CTO and technology leadership roles</div>
+    <h1 class="name" aria-label="Abdul Rahman El Moughrabi" data-ar-aria="عبدالرحمن المغربي" translate="no">
+      <span class="ln" aria-hidden="true"><span data-scramble data-ar="عبدالرحمن">Abdul Rahman</span></span>
+      <span class="ln" aria-hidden="true"><span class="l2" id="l2"><span data-scramble data-ar="المغربي">El Moughrabi</span><em>.</em></span></span>
+    </h1>
+    <p class="lede" data-ar-html="<b>رئيس تقنية ومهندس برمجيات متكامل</b> يربط بين استراتيجية المنتج والتنفيذ الهندسي وجودة الذكاء الاصطناعي ونتائج الأعمال."><b>Chief Technology Officer and full-stack engineer</b> connecting product strategy, engineering execution, AI quality and business outcomes.</p>
+    <div class="ctas">
+      <a class="btn primary magnet" href="#work"><span data-ar="شاهد الأعمال">See the work</span><span class="ico"><svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true" focusable="false"><path d="M4 12L12 4M6 4h6v6"/></svg></span></a>
+      <a class="btn magnet" href="#contact"><span data-ar="تواصل">Contact</span><span class="ico"><svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true" focusable="false"><rect x="2" y="3.5" width="12" height="9" rx="1.5"/><path d="M2.5 4.5L8 9l5.5-4.5"/></svg></span></a>
+    </div>
+  </div>
+</header>
+
+<div class="marquee" aria-label="Executive thesis">
+  <div class="track">
+    <span data-ar="ابنِ من أجل هدف العمل">Build for the business goal</span><span data-ar="أبقِ الأنظمة مفهومة">Keep systems understandable</span><span data-ar="اجعل الموثوقية صريحة">Make reliability explicit</span>
+    <span data-ar="ابنِ من أجل هدف العمل">Build for the business goal</span><span data-ar="أبقِ الأنظمة مفهومة">Keep systems understandable</span><span data-ar="اجعل الموثوقية صريحة">Make reliability explicit</span>
+    <span data-ar="ابنِ من أجل هدف العمل">Build for the business goal</span><span data-ar="أبقِ الأنظمة مفهومة">Keep systems understandable</span><span data-ar="اجعل الموثوقية صريحة">Make reliability explicit</span>
+    <span data-ar="ابنِ من أجل هدف العمل">Build for the business goal</span><span data-ar="أبقِ الأنظمة مفهومة">Keep systems understandable</span><span data-ar="اجعل الموثوقية صريحة">Make reliability explicit</span>
+  </div>
+</div>
+
+<main>
+<!-- ABOUT -->
+<section class="ch" id="about">
+  <div class="wrap">
+        <p class="statement scrub" data-ar-html="مهندس حلّ <span class=&quot;hl&quot;>الثالث من بين 127</span> في جامعة ولاية آيوا، ثم بنى عبر الأنظمة المؤسسية والمنتجات المتكاملة وتطبيقات الجوال وتقييم الذكاء الاصطناعي وشركة أسسها بنفسه.">An engineer who ranked <span class="hl">3rd of 127</span> at Iowa State, then built across enterprise systems, full-stack and mobile products, AI evaluation and a company of his own.</p>
+
+    <div class="stats">
+      <div class="st rank bz rv">
+        <span class="k mono" data-ar="الترتيب في دفعة التخرج">Graduating class rank</span>
+        <div class="v" data-ar-html="<span data-count=&quot;3&quot;>3</span><small>من 127</small>"><span data-count="3">3</span>rd<small>of 127</small></div>
+        <div class="dots" id="dots" role="img" aria-label="127 graduates, ranked 3rd" data-ar-aria="127 خريجًا، الترتيب الثالث"></div>
+        <p data-ar="بكالوريوس هندسة الحاسوب والكهرباء، جامعة ولاية آيوا. كل نقطة تمثل خريجًا في الدفعة.">BSc Computer &amp; Electrical Engineering, Iowa State University. Each dot is one graduate in the class.</p>
+      </div>
+      <div class="st bz rv">
+        <span class="k mono" data-ar="ردود ذكاء اصطناعي تمت مراجعتها">AI responses reviewed</span>
+        <div class="v"><span data-count="1000" data-fmt>1,000</span>+</div>
+        <p data-ar="حلول برمجية فُحصت بحثًا عن الأخطاء والثغرات المنطقية والهلوسات.">Coding solutions checked for bugs, logic errors and hallucinations.</p>
+      </div>
+      <div class="st tall bz rv">
+        <span class="k mono" data-ar="استعلامات أسرع">Faster queries</span>
+        <div class="v"><span data-count="30">30</span>%</div>
+        <p data-ar="تقليص زمن استعلامات قاعدة البيانات عبر ترحيل الأحمال من Oracle إلى SQL.">Database query time cut through an Oracle-to-SQL workload migration.</p>
+      </div>
+      <div class="st bz rv">
+        <span class="k mono" data-ar="مستخدمو تطبيق حي">Live app users</span>
+        <div class="v"><span data-count="1000" data-fmt>1,000</span>+</div>
+        <p data-ar="أشخاص يستخدمون تطبيق أتحداك، الذي يُصان ويُطوَّر في بيئة الإنتاج.">People using Athadak, maintained and extended in production.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CAREER -->
+<section class="ch" id="career">
+  <div class="wrap">
+    <div class="head">
+      <h2 data-ar="هندسة، وأنظمة مؤسسية، ومسؤولية تجارية.">Engineering, enterprise systems and commercial ownership.</h2>
+      <p data-ar="هندسة عملية، وتحسين للأنظمة المؤسسية، وملكية لمنتجات حية، ومسؤولية تجارية، وغالبًا في الوقت نفسه.">Hands-on engineering, enterprise systems improvement, live product ownership and commercial responsibility, often at the same time.</p>
+    </div>
+
+    <div class="stack" id="stack">
+      <article class="job bz spot" style="--i:0">
+        <div class="job-top"><span class="yrs" data-ar="2025 حتى الآن">2025 to present</span><span class="tag" data-ar="تطبيق حي">Live app</span></div>
+        <h3 data-ar="أتحداك">Athadak</h3>
+        <div class="role mono" data-ar="مطوّر تطبيقات جوال، صيانة وترقية الميزات">Mobile App Developer, Maintenance &amp; Feature Upgrades</div>
+        <ul>
+          <li data-ar-html="صان وطوّر تطبيق جوال حيًا يستخدمه نحو <span class=&quot;fig&quot;>1,000+ مستخدم</span>، وسلّم <span class=&quot;fig&quot;>10+ ميزات</span> عبر تحديثات مستمرة.">Maintained and enhanced a live mobile application used by about <span class="fig">1,000+ users</span>, delivering <span class="fig">10+ features</span> across ongoing updates.</li>
+          <li data-ar-html="قلّص المشكلات المتكررة بنحو <span class=&quot;fig&quot;>25-30%</span> عبر تصحيح منهجي واختبار وتحليل للأسباب الجذرية وتحقق قبل الإصدار.">Reduced recurring issues by about <span class="fig">25-30%</span> through systematic debugging, testing, root-cause analysis and validation before release.</li>
+        </ul>
+        <span class="bigmark" aria-hidden="true">A</span>
+      </article>
+      <article class="job bz spot" style="--i:1">
+        <div class="job-top"><span class="yrs" data-ar="2022 حتى الآن">2022 to present</span><span class="tag" data-ar="شريك مؤسس">Co-founder</span></div>
+        <h3 data-ar="ملتيكون">Multicon</h3>
+        <div class="role mono" data-ar="شريك مؤسس، رئيس التقنية والمشتريات">Co-Founder, CTO &amp; Procurement</div>
+        <ul>
+          <li data-ar-html="أطلق عمليات تجزئة تحقق نحو <span class=&quot;fig&quot;>5.5 آلاف دولار شهريًا</span> بنمو شهري <span class=&quot;fig&quot;>2.5%</span>، متوليًا العمل التقني والتشغيلي والمشتريات.">Launched retail operations generating about <span class="fig">US$5.5K per month</span> with <span class="fig">2.5%</span> month-over-month growth, owning technical, operating and procurement work.</li>
+          <li data-ar-html="حقق نحو <span class=&quot;fig&quot;>3 آلاف دولار</span> من مبيعات معرض خلال ثلاثة أيام، وبنى منصة تجارة إلكترونية متعددة البائعين بتوقعات نحو <span class=&quot;fig&quot;>7 آلاف دولار شهريًا</span>.">Generated about <span class="fig">US$3K</span> in exhibition sales over three days and built a multi-vendor e-commerce platform projected at about <span class="fig">US$7K per month</span>.</li>
+        </ul>
+        <span class="bigmark" aria-hidden="true">M</span>
+      </article>
+      <article class="job bz spot" style="--i:2">
+        <div class="job-top"><span class="yrs" data-ar="2020 حتى الآن">2020 to present</span><span class="tag" data-ar="مدينة الكويت">Kuwait City</span></div>
+        <h3 data-ar="وزارة الدفاع، الجيش الكويتي">Ministry of Defense, Kuwait Army</h3>
+        <div class="role mono" data-ar="محلل برمجيات، مهندس عملاء وخبير ذكاء اصطناعي">Software Analyst, Customer Engineer &amp; AI Expert</div>
+        <ul>
+          <li data-ar-html="أسهم في <span class=&quot;fig&quot;>زيادة 400%</span> في عمليات البوابة، إلى جانب <span class=&quot;fig&quot;>زيادة 60%</span> في زوار الموقع ومستخدميه.">Contributed to a <span class="fig">400% increase</span> in portal operations, alongside a <span class="fig">60% increase</span> in site visitors and users.</li>
+          <li data-ar-html="قلّص زمن استعلامات قاعدة البيانات بنسبة <span class=&quot;fig&quot;>30%</span> عبر ترحيل من Oracle إلى SQL، ورقمن الأرشفة لتسريع الاسترجاع وتقليل فقد البيانات. يستخدم Copilot وClaude Code للتوليد وإعادة الهيكلة وتصحيح الأخطاء والتوثيق.">Cut database query time by <span class="fig">30%</span> with an Oracle-to-SQL migration, and digitized archiving to speed retrieval and reduce data loss. Uses Copilot and Claude Code for generation, refactoring, debugging and documentation.</li>
+        </ul>
+        <span class="bigmark" aria-hidden="true">K</span>
+      </article>
+      <article class="job bz spot" style="--i:3">
+        <div class="job-top"><span class="yrs" data-ar="2020 إلى 2021">2020 to 2021</span><span class="tag" data-ar="بالتيمور، الولايات المتحدة">Baltimore, USA</span></div>
+        <h3 data-ar="باي بال">PayPal</h3>
+        <div class="role mono" data-ar="مهندس برمجيات متكامل">Full Stack Engineer</div>
+        <ul>
+          <li data-ar="عمل على تطوير التطبيقات المتكاملة، وواجهات المستخدم، وخدمات الخلفية، وتكامل واجهات REST.">Worked across full-stack application development, frontend experiences, backend services and RESTful API integration.</li>
+          <li data-ar="استخدم JavaScript وTypeScript وReact وNode.js وPython وJava في بيئة سحابية تشمل AWS.">Applied JavaScript, TypeScript, React, Node.js, Python and Java in a cloud-oriented environment that included AWS.</li>
+        </ul>
+        <span class="bigmark" aria-hidden="true">P</span>
+      </article>
+    </div>
+
+    <div class="rules">
+      <h3 class="lbl" data-ar="كيف يترجم ذلك إلى قيادة تقنية">How this translates to CTO leadership</h3>
+      <div class="rule rv"><b data-ar="حدّد الأولويات">Prioritize</b><p data-ar="ترجمة أهداف العمل إلى نطاق تقني واضح ومراحل ومعايير قبول.">Translate business objectives into a clear technical scope, milestones and acceptance criteria.</p><span class="arr" aria-hidden="true"><svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true" focusable="false"><path d="M3 8h10M9 4l4 4-4 4"/></svg></span></div>
+      <div class="rule rv"><b data-ar="ابقَ قريبًا من النظام">Stay close to the system</b><p data-ar="العمل بثقة عبر المعمارية والتنفيذ والواجهات البرمجية والبيانات وتصحيح الأخطاء وجودة الإصدار.">Work confidently across architecture, implementation, APIs, data, debugging and release quality.</p><span class="arr" aria-hidden="true"><svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true" focusable="false"><path d="M3 8h10M9 4l4 4-4 4"/></svg></span></div>
+      <div class="rule rv"><b data-ar="تحمّل مسؤولية النتائج">Own outcomes</b><p data-ar="التعامل مع الموثوقية والاختبار والممارسات الأمنية والتوثيق وقابلية الدعم كمتطلبات تسليم.">Treat reliability, testing, security hygiene, documentation and supportability as delivery requirements.</p><span class="arr" aria-hidden="true"><svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true" focusable="false"><path d="M3 8h10M9 4l4 4-4 4"/></svg></span></div>
+    </div>
+  </div>
+</section>
+
+<!-- AI -->
+<section class="ch" id="ai">
+  <div class="wrap">
+    <div class="head">
+      <h2 data-ar="التمييز بين الإجابة المقنعة والإجابة الصحيحة.">Telling a plausible answer from a correct one.</h2>
+      <p data-ar="حكم هندسي برمجي مطبَّق على جودة الذكاء الاصطناعي وبيانات التدريب والتعليم التقني والتقييم القابل للتكرار.">Software-engineering judgment applied to AI quality, training data, technical education and repeatable evaluation.</p>
+    </div>
+
+    <div class="ai-grid">
+      <div class="col">
+        <article class="card bz spot rv">
+          <span class="mono" data-ar="2024 إلى 2026، عن بُعد">2024 to 2026, remote</span>
+          <h3 data-ar="تيلوس ديجيتال، حلول بيانات الذكاء الاصطناعي">TELUS Digital, AI Data Solutions</h3>
+          <div class="meta mono" data-ar="مدرّب نماذج لغوية ومُعلِّق بيانات ذكاء اصطناعي">LLM Trainer &amp; AI Data Annotator</div>
+          <p data-ar="قيّم أكثر من 1,000 رد برمجي وحل برمجي من إنتاج الذكاء الاصطناعي، وكشف الأخطاء والثغرات المنطقية والهلوسات والتنفيذات الخاطئة. قيّم الدقة وجودة الشيفرة والاستدلال والالتزام بالتعليمات، ثم كتب ملاحظات تصحيحية لتحسين جودة بيانات التدريب.">Evaluated 1,000+ AI-generated software responses and coding solutions, finding bugs, logic errors, hallucinations and incorrect implementations. Assessed accuracy, code quality, reasoning and instruction-following, then wrote corrective feedback to improve training-data quality.</p>
+        </article>
+        <article class="card bz spot rv">
+          <span class="mono" data-ar="حسب المشروع، عن بُعد">Project-based, remote</span>
+          <h3 data-ar="ون فورما">OneForma</h3>
+          <div class="meta mono" data-ar="مدرّب ذكاء اصطناعي وتقييم نماذج لغوية">AI Trainer &amp; LLM Evaluation</div>
+          <p data-ar="تدريب وتعليق بيانات الذكاء الاصطناعي عبر مسارات تقييم النماذج وجودة الردود، مع تطبيق فحوص الجودة وإرشادات المشروع لنتائج متسقة.">AI training and annotation across model-evaluation and response-quality workflows, applying quality checks and project guidelines for consistent results.</p>
+        </article>
+      </div>
+
+      <aside class="loop bz rv" aria-label="The quality loop">
+        <span class="mono" style="color:var(--muted)" data-ar="حلقة الجودة">The quality loop</span>
+        <svg viewBox="0 0 300 300" role="img" aria-label="Inspect, validate and improve, repeating in a loop">
+          <defs><linearGradient id="lg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#86D3FF"/><stop offset="1" stop-color="#F2B34A"/></linearGradient></defs>
+          <g class="ring-dash"><circle cx="150" cy="150" r="128" fill="none" stroke="rgba(205,220,255,.12)" stroke-width="1" stroke-dasharray="2 6"/></g>
+          <circle cx="150" cy="150" r="100" fill="none" stroke="rgba(205,220,255,.1)" stroke-width="1.5"/>
+          <g class="ring-spin">
+            <circle cx="150" cy="150" r="100" fill="none" stroke="url(#lg)" stroke-width="2.5" stroke-linecap="round" stroke-dasharray="120 508"/>
+            <circle cx="250" cy="150" r="5" fill="#F2B34A"/>
+          </g>
+          <g font-family="Geist Mono, monospace" font-size="10" text-anchor="middle" fill="#E9EDF4" letter-spacing="1">
+            <circle cx="150" cy="50" r="27" fill="#0F141E" stroke="#86D3FF"/><text x="150" y="54">INSPECT</text>
+            <circle cx="236.6" cy="200" r="27" fill="#0F141E" stroke="#C7C47E"/><text x="236.6" y="204">VALID.</text>
+            <circle cx="63.4" cy="200" r="27" fill="#0F141E" stroke="#F2B34A"/><text x="63.4" y="204">IMPROVE</text>
+          </g>
+          <text x="150" y="146" text-anchor="middle" font-family="Bricolage Grotesque, sans-serif" font-size="22" font-weight="600" fill="#E9EDF4">Verify,</text>
+          <text x="150" y="172" text-anchor="middle" font-family="Bricolage Grotesque, sans-serif" font-size="22" font-weight="600" fill="#F2B34A">then feedback</text>
+        </svg>
+        <div class="steps">
+          <div class="step"><b data-ar-html="<span>أولًا</span>افحص"><span>First</span>Inspect</b><p data-ar="توضيح المتطلبات والحدود والنتيجة المتوقعة.">Clarify requirements, boundaries and the expected result.</p></div>
+          <div class="step"><b data-ar-html="<span>ثم</span>تحقق"><span>Then</span>Validate</b><p data-ar="التحقق من الصحة والاستدلال والاتساق والحالات الحدّية.">Check correctness, reasoning, consistency and edge cases.</p></div>
+          <div class="step"><b data-ar-html="<span>أخيرًا</span>حسّن"><span>Finally</span>Improve</b><p data-ar="تسجيل الأخطاء الملموسة والتوجيه التصحيحي.">Record concrete errors and corrective guidance.</p></div>
+        </div>
+      </aside>
+    </div>
+
+    <div class="academic">
+      <article class="card bz spot rv">
+        <span class="mono" data-ar="جامعة ولاية آيوا، 2018 إلى 2019">Iowa State University, 2018 to 2019</span>
+        <h3 style="margin-top:12px;font-size:1.7rem" data-ar="مساعد باحث">Research Assistant</h3>
+        <p data-ar="حسّن دقة وحدة تعلّم آلي وسرعة معالجتها.">Improved a machine-learning module’s accuracy and its processing speed.</p>
+        <div class="duo">
+          <div class="big">~50%</div><span class="mono" style="color:var(--muted)" data-ar="أدق">more accurate</span>
+          <div class="big" style="color:var(--ice);font-size:clamp(2.4rem,4vw,3.4rem)">~20%</div><span class="mono" style="color:var(--muted)" data-ar="أسرع">faster</span>
+        </div>
+      </article>
+      <article class="card bz spot rv">
+        <span class="mono" data-ar="جامعة ولاية آيوا، 2017">Iowa State University, 2017</span>
+        <div class="big">~20%</div>
+        <h3 data-ar="مساعد تدريس">Teaching Assistant</h3>
+        <p data-ar="نظّم جلسات مراجعة وساعات مكتبية أسهمت في تحسين درجات الاختبارات.">Structured review sessions and office hours, contributing to better exam scores.</p>
+      </article>
+      <article class="card bz spot rv">
+        <span class="mono" data-ar="بيمز، 2018 إلى 2019">Baims, 2018 to 2019</span>
+        <div class="big" data-ar="183 نسخة">183 copies</div>
+        <h3 data-ar="مدرّس Python وتعلّم الآلة">Python &amp; Machine Learning Tutor</h3>
+        <p data-ar="أنشأ دورات وباعها، محققًا نحو 6 آلاف دولار وتحسنًا ملموسًا في الدرجات.">Created and sold courses, generating about US$6K and measurable grade improvements.</p>
+      </article>
+    </div>
+
+    <div class="quote">
+      <span class="mono" data-ar="لماذا يهم ذلك">Why this matters</span>
+      <p class="scrub" data-ar="أحمل عقلية المراجِع إلى الهندسة: أحدّد معنى الصواب، وأتحدى الافتراضات، وأكشف الحالات الحدّية، وأجعل الملاحظات محددة بما يكفي لتصبح تنفيذًا أكثر أمانًا.">I bring a reviewer’s mindset to engineering: define what correct means, challenge assumptions, surface edge cases, and make feedback specific enough to become a safer implementation.</p>
+    </div>
+  </div>
+</section>
+
+<!-- WORK -->
+<section class="ch" id="work">
+  <div class="wrap">
+    <div class="head">
+      <span class="eyebrow" data-ar="تسليم المنتجات">Product delivery</span>
+      <h2 data-ar="منتجات مختارة، أُطلقت وتُصان.">Selected products, shipped and maintained.</h2>
+      <p data-ar="تطبيقات جوال، وتجارب ثنائية اللغة، ومنتجات صحية، ومنصات ويب، وتحسين مستمر للأنظمة الحية.">Mobile applications, bilingual experiences, health products, web platforms and the ongoing improvement of live systems.</p>
+    </div>
+
+    <div class="bento">
+      <article class="prod feat bz tilt spot rv">
+        <span class="mono" data-ar="منصة ويب مميزة">Featured web platform</span>
+        <h3>MBBReady.com</h3>
+        <p class="lead" data-ar="منصة للتحضير لمقابلات الاستشارات مع موقع عام وبوابة أعضاء ومسارات إدارية كاملة.">A consulting-interview preparation platform with a public site, member portal and full administration workflows.</p>
+        <div class="chips">
+          <span class="chip" data-ar="مكتبة حالات">Case library</span><span class="chip" data-ar="دورات">Courses</span><span class="chip" data-ar="منتجات رقمية">Digital products</span><span class="chip" data-ar="حجز جلسات تدريب">Coaching booking</span><span class="chip" data-ar="مدفوعات متعددة العملات">Multi-currency payments</span><span class="chip" data-ar="محاكيات مقابلات بالذكاء الاصطناعي">AI interview simulators</span><span class="chip" data-ar="مسارات إدارية">Admin workflows</span>
+        </div>
+      </article>
+      <article class="prod bz tilt spot rv p-warm"><span class="ini" aria-hidden="true">A</span><span class="mono live" data-ar="متاح على iOS وAndroid">Live on iOS &amp; Android</span><h3 data-ar="أتحداك">Athadak</h3><p data-ar="صيانة في الإنتاج، وتسليم ميزات، وحل مشكلات، واختبار ودعم إصدارات.">Production maintenance, feature delivery, issue resolution, testing and release support.</p></article>
+      <article class="prod bz tilt spot rv p-dots"><span class="ini" aria-hidden="true">J</span><span class="mono" data-ar="عربي وإنجليزي">Arabic &amp; English</span><h3 data-ar="جاو">Jao</h3><p data-ar="ألعاب، وآليات رموز، وتجارة ألعاب لوحية، ومسارات للبائعين، وإدارة للمطورين.">Games, token mechanics, board-game commerce, vendor workflows and developer admin.</p></article>
+      <article class="prod bz tilt spot rv p-cool"><span class="ini" aria-hidden="true">S</span><span class="mono" data-ar="جوال">Mobile</span><h3 data-ar="سين">SIIN</h3><p data-ar="تنفيذ تقني، وعمل منتج تكراري، ودعم تسليم.">Technical implementation, iterative product work and delivery support.</p></article>
+      <article class="prod bz tilt spot rv p-lines"><span class="ini" aria-hidden="true">W</span><span class="mono" data-ar="جوال">Mobile</span><h3 data-ar="واصل">Wasil</h3><p data-ar="تنفيذ ميزات، وتحسينات، ودعم تسليم مستمر.">Feature implementation, refinements and ongoing delivery support.</p></article>
+      <article class="prod bz tilt spot rv p-warm"><span class="ini" aria-hidden="true">H</span><span class="mono" data-ar="صحة">Health</span><h3>MBBHealth</h3><p data-ar="تطبيق صحي يركز على التنفيذ وتسليم المنتج.">Health-related application focused on implementation and product delivery.</p></article>
+      <article class="prod bz tilt spot rv p-dots"><span class="ini" aria-hidden="true">N</span><span class="mono" data-ar="جوال">Mobile</span><h3 data-ar="نوف">Nouf</h3><p data-ar="تنفيذ، وعمل على الميزات، وتحسين تكراري.">Implementation, feature work and iterative refinement.</p></article>
+      <article class="prod bz tilt spot rv p-cool"><span class="ini" aria-hidden="true">J</span><span class="mono" data-ar="تطبيق">Application</span><h3 data-ar="القاضي">The Judge</h3><p data-ar="تطوير برمجيات عبر دورة حياة تسليم المنتج.">Software development across the product-delivery lifecycle.</p></article>
+      <article class="prod bz tilt spot rv p-lines"><span class="ini" aria-hidden="true">+</span><span class="mono" data-ar="أعمال للعملاء وداخلية">Client &amp; internal work</span><h3 data-ar="والمزيد">And more</h3><p data-ar="تطبيقات ومواقع أخرى. تُشارك التفاصيل حيث يسمح العميل بالإفصاح.">Further apps and websites. Details shared where client disclosure permits.</p></article>
+    </div>
+
+    <div class="flow rv" id="flow"><span class="seg" id="seg" aria-hidden="true"></span>
+      <div><i>01</i><b data-ar="حدّد">Define</b><p data-ar="توضيح النتائج والقيود ومعايير القبول.">Clarify outcomes, constraints and acceptance criteria.</p></div>
+      <div><i>02</i><b data-ar="نفّذ">Implement</b><p data-ar="تسليم الميزات ودمج الواجهة والواجهات البرمجية والبيانات.">Deliver features and integrate UI, APIs and data.</p></div>
+      <div><i>03</i><b data-ar="اختبر">Test</b><p data-ar="تصحيح السيناريوهات وتقليل مخاطر التراجع.">Debug scenarios and reduce regression risk.</p></div>
+      <div><i>04</i><b data-ar="ادعم">Support</b><p data-ar="تجهيز الإصدارات والبيئات وعمليات التسليم.">Prepare versions, environments and handoffs.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- ENGINEERING -->
+<section class="ch" id="engineering">
+  <div class="wrap">
+    <div class="head">
+      <h2 data-ar="شيفرات تُظهر طريقة التفكير.">Codebases that show the thinking.</h2>
+      <p data-ar="مستودعات تمثيلية تغطي المعمارية والتفكير المنتجي والتنفيذ متعدد المنصات.">Representative repositories covering architecture, product thinking and multi-platform implementation.</p>
+    </div>
+
+    <div class="eng">
+      <article class="card repo wide bz spot rv">
+        <div class="top"><span class="mono" data-ar="دعم قرارات الاستثمار">Investment decision support</span><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 .5a11.5 11.5 0 0 0-3.64 22.4c.58.1.79-.25.79-.56v-2c-3.2.7-3.88-1.37-3.88-1.37-.53-1.33-1.28-1.69-1.28-1.69-1.05-.71.08-.7.08-.7 1.16.08 1.77 1.19 1.77 1.19 1.03 1.77 2.7 1.26 3.36.96.1-.75.4-1.26.73-1.55-2.55-.29-5.24-1.28-5.24-5.68 0-1.26.45-2.28 1.19-3.09-.12-.29-.52-1.46.11-3.05 0 0 .97-.31 3.17 1.18a11 11 0 0 1 5.77 0c2.2-1.49 3.17-1.18 3.17-1.18.63 1.59.23 2.76.11 3.05.74.81 1.19 1.83 1.19 3.09 0 4.41-2.69 5.39-5.25 5.67.41.36.78 1.06.78 2.14v3.17c0 .31.21.67.8.56A11.5 11.5 0 0 0 12 .5Z"/></svg></div>
+        <h3>MADARA</h3>
+        <p data-ar="مسار عمل محمي بموافقة بشرية، مع ضوابط مخاطر حتمية، وعقود مُنمَّطة لوكلاء الذكاء الاصطناعي، وقابلية تدقيق، واختبار مرحلي، وثوابت صريحة للبيانات المالية.">A guarded, human-approved workflow with deterministic risk controls, typed AI-agent contracts, auditability, phased testing and explicit financial-data invariants.</p>
+        <div class="chips"><span class="chip">Python 3.12+</span><span class="chip">FastAPI</span><span class="chip">PostgreSQL</span><span class="chip">Streamlit</span></div>
+        <a class="go" href="https://github.com/abedmoghrabi" target="_blank" rel="noopener"><span data-ar="عرض على GitHub">View on GitHub</span> <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true" focusable="false"><path d="M4 12L12 4M6 4h6v6"/></svg></a>
+      </article>
+
+      <aside class="pillars bz rv">
+        <span class="mono" data-ar="مبادئ هندسية">Engineering principles</span>
+        <div class="pillar"><span data-ar="حدود واضحة">Clear boundaries</span><b data-ar="معمارية تبدأ بالواجهة البرمجية">API-first architecture</b><p data-ar="إبقاء عقود الخدمات مستقرة ومنطق العمل مستقلًا عن طبقة العرض.">Keep service contracts stable and business logic independent from presentation.</p></div>
+        <div class="pillar"><span data-ar="تحقق من التغيير">Verify change</span><b data-ar="بوابات جودة">Quality gates</b><p data-ar="اختبارات بحسب المخاطر. الواجهات الرئيسية ورحلات المستخدم تُتحقق قبل الإصدار.">Tests matched to risk. Key interfaces and user journeys validated before release.</p></div>
+        <div class="pillar"><span data-ar="حكم بشري">Human judgment</span><b data-ar="ذكاء اصطناعي بضوابط">AI with guardrails</b><p data-ar="الذكاء الاصطناعي يسرّع التنفيذ، بينما تحمي المراجعة والتتبع والضوابط الحتمية المنطق الحرج.">AI speeds up implementation while review, traceability and deterministic controls protect critical logic.</p></div>
+      </aside>
+
+      <article class="card repo bz spot rv">
+        <div class="top"><span class="mono" data-ar="منصة ويب وواجهة برمجية">Web platform &amp; API</span></div>
+        <h3>MBBReady</h3>
+        <p data-ar="مستودع pnpm موحّد: تطبيق ويب React + Vite، وواجهة Express، وPostgreSQL مع Drizzle، وعملاء واجهة مولَّدون، ومسارات فحص أنواع في CI.">A pnpm monorepo: React + Vite web app, Express API, PostgreSQL with Drizzle, generated API clients and CI type-check workflows.</p>
+        <div class="chips"><span class="chip">React</span><span class="chip">Express</span><span class="chip">Drizzle</span></div>
+        <a class="go" href="https://github.com/abedmoghrabi" target="_blank" rel="noopener"><span data-ar="عرض على GitHub">View on GitHub</span> <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true" focusable="false"><path d="M4 12L12 4M6 4h6v6"/></svg></a>
+      </article>
+      <article class="card repo bz spot rv">
+        <div class="top"><span class="mono" data-ar="متعدد المنصات">Cross-platform</span></div>
+        <h3 data-ar="العافية واللياقة">Wellness &amp; Fitness</h3>
+        <p data-ar="تهيئة المستخدم، وبناء التمارين، وتتبع الأداء، والسجل، ومسارات التدريب، والإشعارات، وأوضاع واجهة متعددة.">Onboarding, workout building, exercise tracking, history, coaching flows, notifications and multiple interface modes.</p>
+        <div class="chips"><span class="chip">Flutter</span><span class="chip">Supabase</span><span class="chip">Riverpod</span></div>
+        <a class="go" href="https://github.com/abedmoghrabi" target="_blank" rel="noopener"><span data-ar="عرض على GitHub">View on GitHub</span> <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true" focusable="false"><path d="M4 12L12 4M6 4h6v6"/></svg></a>
+      </article>
+
+      <article class="card repo full bz spot rv">
+        <div class="left">
+          <div class="top"><span class="mono" data-ar="منظومة جوال وخلفية">Mobile &amp; backend ecosystem</span></div>
+          <h3 data-ar="أتحداك">Athadak</h3>
+          <p data-ar="مستودعات iOS وAndroid وخلفية مترابطة تشكّل منظومة واحدة متعددة المكونات: شيفرة التطبيق، والصيانة، وتسليم الميزات، وتكامل الخلفية، وتجهيز الإصدارات.">Related iOS, Android and backend repositories forming one multi-component ecosystem: application code, maintenance, feature delivery, backend integration and release preparation.</p>
+        </div>
+        <div>
+          <div class="chips" style="padding-top:0"><span class="chip">iOS</span><span class="chip">Android</span><span class="chip">Backend</span><span class="chip" data-ar="تجهيز الإصدارات">Release preparation</span></div>
+          <a class="go" href="https://github.com/abedmoghrabi" target="_blank" rel="noopener"><span data-ar="عرض على GitHub">View on GitHub</span> <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true" focusable="false"><path d="M4 12L12 4M6 4h6v6"/></svg></a>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- CAPABILITIES -->
+<section class="ch" id="capabilities">
+  <div class="wrap">
+    <div class="head">
+      <h2 data-ar="اتساع يغطي الحزمة التقنية كاملة.">Breadth across the whole stack.</h2>
+    </div>
+    <div class="caps">
+      <div class="cap bz spot rv"><span class="sub" data-ar="تطبيقات وخدمات">Applications &amp; services</span><h3 data-ar="هندسة برمجيات متكاملة">Full-stack engineering</h3><p data-ar="تطوير التطبيقات والخدمات، والتكاملات، وتصحيح الأخطاء، ومراجعة الشيفرة.">Application and service development, integrations, debugging and code review.</p><div class="tools"><span>TypeScript</span><span>React</span><span>Node.js</span><span>Python</span><span>Java</span><span>REST</span></div></div>
+      <div class="cap bz spot rv"><span class="sub" data-ar="iOS وAndroid ومتعدد المنصات">iOS, Android, cross-platform</span><h3 data-ar="جوال">Mobile</h3><p data-ar="تسليم الميزات، والصيانة، والاختبار، والجاهزية للإصدار.">Feature delivery, maintenance, testing and release readiness.</p><div class="tools"><span>Flutter</span><span>Dart</span><span>Android</span><span>iOS</span></div></div>
+      <div class="cap bz spot rv"><span class="sub" data-ar="تخزين وتكامل">Persistence &amp; integration</span><h3 data-ar="البيانات والخلفية">Data &amp; backend</h3><p data-ar="تصميم علائقي، وترحيلات، وواجهات برمجية، ومصادقة، وتخزين.">Relational design, migrations, APIs, authentication and storage.</p><div class="tools"><span>PostgreSQL</span><span>Oracle</span><span>Supabase</span><span>SQL</span></div></div>
+      <div class="cap bz spot rv"><span class="sub" data-ar="بيئات وأدوات">Environments &amp; tooling</span><h3 data-ar="السحابة والتسليم">Cloud &amp; delivery</h3><p data-ar="تحقق في CI، وتجهيز النشر، وفصل البيئات، والتوثيق.">CI validation, deployment preparation, environment separation and documentation.</p><div class="tools"><span>AWS</span><span>GitHub</span><span>CI</span></div></div>
+      <div class="cap bz spot rv"><span class="sub" data-ar="تدريب وتقييم">Training &amp; evaluation</span><h3 data-ar="الذكاء الاصطناعي وجودة النماذج">AI &amp; model quality</h3><p data-ar="تقييم النماذج اللغوية، والتعليق، ومراجعة الصحة، وملاحظات منظمة.">LLM evaluation, annotation, correctness review and structured feedback.</p><div class="tools"><span>LLM eval</span><span>Copilot</span><span>Claude Code</span></div></div>
+      <div class="cap wide-cap bz spot rv"><span class="sub" data-ar="قيادة وعمليات">Leadership &amp; operations</span><h3 data-ar="تقنية المعلومات والأعمال">IT &amp; business</h3><p data-ar="تحليل الأنظمة، ودعم تقنية المعلومات، وتسليم المشاريع، والمشتريات، وعمليات الأعمال، وصيانة المنتجات.">System analysis, IT support, project delivery, procurement, business operations and product maintenance.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- CREDENTIALS -->
+<section class="ch" id="credentials">
+  <div class="wrap">
+    <div class="head">
+      <h2 data-ar="الأساس الذي يقف خلف العمل.">The foundation behind the work.</h2>
+    </div>
+    <div class="creds">
+      <article class="edu bz rv">
+        <span class="mono" style="color:var(--muted)" data-ar="جامعة ولاية آيوا، كلية الهندسة">Iowa State University, College of Engineering</span>
+        <h3 data-ar="بكالوريوس هندسة الحاسوب والكهرباء">BSc, Computer &amp; Electrical Engineering</h3>
+        <div class="meta mono" data-ar="إيمز، آيوا. ديسمبر 2020">Ames, Iowa. December 2020</div>
+        <div class="rk"><b data-ar="الثالث">3rd</b><span data-ar="من بين 127 خريجًا في الدفعة">of 127 graduates in the class</span></div>
+      </article>
+      <div class="certs">
+        <div class="cert bz rv"><div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.3" aria-hidden="true" focusable="false"><rect x="3" y="4" width="18" height="12" rx="2"/><path d="M8 20h8M12 16v4"/></svg></div><b data-ar="شهادة Google الاحترافية في دعم تقنية المعلومات">Google IT Support Professional Certificate</b><span class="mono">Coursera</span><p data-ar="استكشاف الأخطاء، والأنظمة، ومفاهيم الخدمة.">Troubleshooting, systems and service concepts.</p></div>
+        <div class="cert bz rv"><div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.3" aria-hidden="true" focusable="false"><path d="M12 3l8 3v6c0 4.5-3.4 8.3-8 9-4.6-.7-8-4.5-8-9V6l8-3z"/><path d="M9 12l2 2 4-4"/></svg></div><b data-ar="شهادة Google الاحترافية في الأمن السيبراني">Google Cybersecurity Professional Certificate</b><span class="mono">Coursera</span><p data-ar="أساسيات الأمن وممارسات عملية واعية بالمخاطر.">Security foundations and practical risk-aware practices.</p></div>
+        <div class="cert bz rv"><div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.3" aria-hidden="true" focusable="false"><circle cx="12" cy="8" r="4"/><path d="M4 21c1.5-4 4.5-6 8-6s6.5 2 8 6"/></svg></div><b data-ar="شهادة مدير تقنية المعلومات">IT Manager Certificate</b><span class="mono">Alison</span><p data-ar="أساسيات إدارة تقنية المعلومات والتشغيل.">IT management and operational foundations.</p></div>
+        <div class="cert bz rv"><div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.3" aria-hidden="true" focusable="false"><path d="M12 3v3M12 18v3M3 12h3M18 12h3"/><rect x="7" y="7" width="10" height="10" rx="2"/><path d="M10 12h4"/></svg></div><b data-ar="مدرّب ذكاء اصطناعي، تدريب وتقييم النماذج اللغوية">AI Trainer, LLM Training &amp; Evaluation</b><span class="mono" data-ar="تيلوس ديجيتال وون فورما">TELUS Digital &amp; OneForma</span><p data-ar="تعليق بيانات، وتقييم ردود، ومراجعة جودة تقنية.">Annotation, response evaluation and technical quality review.</p></div>
+      </div>
+    </div>
+  </div>
+</section>
+</main>
+
+<!-- CONTACT -->
+<section class="contact" id="contact">
+  <div class="wrap">
+    <span class="eyebrow" data-ar="تواصل">Contact</span>
+    <h2 data-ar-html="لنبنِ شيئًا <em>موثوقًا.</em>">Let’s build something <em>reliable.</em></h2>
+    <div class="mailbox bz">
+      <span class="addr" id="addr" translate="no">abedmoghrabi@gmail.com</span>
+      <button class="copy" id="copy" type="button" aria-describedby="copyLive">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><rect x="9" y="9" width="12" height="12" rx="2"/><path d="M5 15V5a2 2 0 0 1 2-2h10"/></svg>
+        <span data-ar="انسخ البريد">Copy email</span>
+      </button><span id="copyLive" aria-live="polite" style="position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0)"></span>
+    </div>
+    <div class="reach">
+      <div class="bz"><span class="mono" data-ar="الكويت">Kuwait</span><b>+965 5123 3026</b></div>
+      <div class="bz"><span class="mono" data-ar="الولايات المتحدة">United States</span><b>+1 515 708 5939</b></div>
+      <a class="bz" href="https://github.com/abedmoghrabi" target="_blank" rel="noopener"><span class="mono">GitHub</span><b>@abedmoghrabi</b></a>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap mono">
+    <span translate="no" data-ar="© 2026 عبدالرحمن المغربي">© 2026 Abdul Rahman El Moughrabi</span>
+    <span data-ar="الكويت">Kuwait</span>
+  </div>
+</footer>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+<script>
+(function(){
+  const reduce = matchMedia('(prefers-reduced-motion: reduce)').matches;
+  const motion = !!(window.gsap && window.ScrollTrigger) && !reduce;
+  if(motion) document.documentElement.classList.add('js');
+  /* ---------- language: English in markup, Arabic in data-ar / data-ar-html ---------- */
+  let saved=null; try{ saved=localStorage.getItem('arm-lang'); }catch(e){}
+  const lang = saved || ((navigator.languages||[navigator.language||'en']).some(x=>/^ar/i.test(x)) ? 'ar' : 'en');
+  if(lang==='ar'){
+    document.documentElement.lang='ar'; document.documentElement.dir='rtl';
+    document.querySelectorAll('[data-ar]').forEach(e=>{ e.textContent=e.dataset.ar; });
+    document.querySelectorAll('[data-ar-html]').forEach(e=>{ e.innerHTML=e.dataset.arHtml; });
+    document.querySelectorAll('[data-ar-aria]').forEach(e=>e.setAttribute('aria-label',e.dataset.arAria));
+    document.title='عبدالرحمن المغربي';
+    document.querySelectorAll('.lang').forEach(b=>{ b.textContent='English'; b.lang='en'; b.setAttribute('aria-label','التبديل إلى الإنجليزية'); });
+  }
+  document.querySelectorAll('.lang').forEach(b=>b.addEventListener('click',()=>{ try{ localStorage.setItem('arm-lang', lang==='ar'?'en':'ar'); }catch(e){} location.reload(); }));
+  const curtain=document.getElementById('curtain');
+  if(!motion){ curtain.remove(); }
+  const fine = matchMedia('(pointer: fine)').matches;
+
+  /* ---------- signal field ---------- */
+  const cv = document.getElementById('field');
+  const ctx = cv.getContext('2d');
+  let W=0,H=0,parts=[],t=0,running=true,mouse={x:-9999,y:-9999};
+  function spawn(){ return {x:Math.random()*W, y:Math.random()*H, life:60+Math.random()*240, amber:Math.random()<.16, s:.6+Math.random()*1.1}; }
+  function resize(){
+    const scale = .6; /* render at 60% and let the GPU upscale: trails are soft anyway, and it cuts fill cost by more than half */
+    const r = cv.getBoundingClientRect(); W=r.width; H=r.height;
+    cv.width=Math.round(W*scale); cv.height=Math.round(H*scale); ctx.setTransform(scale,0,0,scale,0,0);
+    parts = Array.from({length:Math.min(170, Math.round(W*H/9000))}, spawn);
+    ctx.fillStyle='#090C12'; ctx.fillRect(0,0,W,H);
+    for(let i=0;i<110;i++) step();
+  }
+  function angle(x,y){ return (Math.sin(x*0.0019+t*0.6)+Math.cos(y*0.0024-t*0.45)+Math.sin((x+y)*0.0009+t*0.3))*Math.PI*.75; }
+  function step(){
+    t+=0.004;
+    ctx.fillStyle='rgba(9,12,18,0.075)'; ctx.fillRect(0,0,W,H);
+    ctx.lineWidth=1.4;
+    const ice=new Path2D(), amb=new Path2D();
+    for(const p of parts){
+      const a=angle(p.x,p.y); let vx=Math.cos(a)*p.s*1.4, vy=Math.sin(a)*p.s*1.4;
+      const dx=p.x-mouse.x, dy=p.y-mouse.y, d2=dx*dx+dy*dy;
+      if(d2<26000){ const f=(26000-d2)/26000*3.4, d=Math.sqrt(d2)||1; vx+=dx/d*f; vy+=dy/d*f; }
+      const nx=p.x+vx, ny=p.y+vy, path=p.amber?amb:ice;
+      path.moveTo(p.x,p.y); path.lineTo(nx,ny);
+      p.x=nx; p.y=ny; p.life--;
+      if(p.life<0||p.x<-10||p.x>W+10||p.y<-10||p.y>H+10) Object.assign(p, spawn());
+    }
+    ctx.strokeStyle='rgba(134,211,255,0.27)'; ctx.stroke(ice);
+    ctx.strokeStyle='rgba(242,179,74,0.55)'; ctx.stroke(amb);
+  }
+  resize();
+  let rt; addEventListener('resize',()=>{clearTimeout(rt); rt=setTimeout(resize,150);});
+  let fieldOn=true; (function loop(){ if(running && fieldOn && !reduce) step(); requestAnimationFrame(loop); })();
+  const hero=document.querySelector('.hero');
+  new IntersectionObserver(([e])=>{running=e.isIntersecting;},{threshold:.12}).observe(hero);
+  document.addEventListener('visibilitychange',()=>{fieldOn=!document.hidden;});
+  hero.addEventListener('pointermove',e=>{const r=cv.getBoundingClientRect(); mouse.x=e.clientX-r.left; mouse.y=e.clientY-r.top;});
+  hero.addEventListener('pointerleave',()=>{mouse.x=mouse.y=-9999;});
+
+  /* ---------- name decode, readable throughout ---------- */
+  function decode(){
+    const glyphs=lang==='ar'?'ابتثجحخدذرزسشصضطظعغفقكلمنهوي':'ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789<>/{}#$%&';
+    document.querySelectorAll('[data-scramble]').forEach((el,k)=>{
+      const final=el.textContent, start=performance.now()+k*200, dur=1150;
+      (function frame(now){
+        const p=Math.max(0,Math.min(1,(now-start)/dur)), fixed=Math.floor(p*final.length);
+        let out=final.slice(0,fixed);
+        for(let i=fixed;i<final.length;i++) out+= final[i]===' ' ? ' ' : (Math.random()<.5 ? final[i] : glyphs[Math.floor(Math.random()*glyphs.length)]);
+        el.textContent=out;
+        if(p<1) requestAnimationFrame(frame); else el.textContent=final;
+      })(performance.now());
+    });
+  }
+  if(reduce||!motion) { /* static name */ }
+
+  /* ---------- counters ---------- */
+  const cio=new IntersectionObserver(es=>{
+    es.forEach(e=>{
+      if(!e.isIntersecting) return; cio.unobserve(e.target); if(reduce) return;
+      const el=e.target, end=+el.dataset.count, f=el.hasAttribute('data-fmt'), t0=performance.now(), dur=1500;
+      (function tick(now){ const p=Math.min(1,(now-t0)/dur), v=Math.round(end*(1-Math.pow(1-p,4))); el.textContent=f?v.toLocaleString('en-US'):v; if(p<1) requestAnimationFrame(tick); })(t0);
+    });
+  },{threshold:.6});
+  document.querySelectorAll('[data-count]').forEach(el=>cio.observe(el));
+
+  /* ---------- rank dots ---------- */
+  const dots=document.getElementById('dots');
+  for(let i=1;i<=127;i++){ const d=document.createElement('i'); if(i===3) d.className='me'; dots.appendChild(d); }
+  if(!reduce){
+    const dio=new IntersectionObserver(([e])=>{
+      if(!e.isIntersecting) return; dio.disconnect();
+      [...dots.children].forEach((d,i)=>{ if(d.className) return; d.animate([{background:'rgba(134,211,255,.55)'},{background:'rgba(205,220,255,.1)'}],{duration:900,delay:i*9,easing:'cubic-bezier(.32,.72,0,1)'}); });
+    },{threshold:.5});
+    dio.observe(dots);
+  }
+
+  /* ---------- active nav link ---------- */
+  const links=[...document.querySelectorAll('.links a')];
+  const sio=new IntersectionObserver(es=>{ es.forEach(e=>{ if(e.isIntersecting) links.forEach(a=>a.classList.toggle('active', a.getAttribute('href')==='#'+e.target.id)); }); },{rootMargin:'-45% 0px -50% 0px'});
+  document.querySelectorAll('section[id]').forEach(s=>sio.observe(s));
+
+  /* ---------- mobile menu ---------- */
+  const burger=document.getElementById('burger'), menu=document.getElementById('menu');
+  function setMenu(open){
+    burger.setAttribute('aria-expanded', open); burger.setAttribute('aria-label', lang==='ar'?(open?'إغلاق القائمة':'فتح القائمة'):(open?'Close menu':'Open menu'));
+    menu.classList.toggle('open', open); menu.setAttribute('aria-hidden', !open); document.body.classList.toggle('locked', open);
+  }
+  burger.addEventListener('click',()=>setMenu(burger.getAttribute('aria-expanded')!=='true'));
+  menu.querySelectorAll('a').forEach(a=>a.addEventListener('click',()=>setMenu(false)));
+  addEventListener('keydown',e=>{ if(e.key==='Escape') setMenu(false); });
+
+  /* ---------- pointer effects ---------- */
+  if(fine && !reduce){
+    const glow=document.querySelector('.glow'); let gx=innerWidth/2, gy=innerHeight/2, tx=gx, ty=gy;
+    addEventListener('pointermove',e=>{tx=e.clientX; ty=e.clientY; glow.classList.add('on');});
+    (function g(){ if(Math.abs(tx-gx)+Math.abs(ty-gy)>.5){ gx+=(tx-gx)*.12; gy+=(ty-gy)*.12; glow.style.transform=`translate3d(${gx}px,${gy}px,0)`; } requestAnimationFrame(g); })();
+    document.querySelectorAll('.spot').forEach(el=>el.addEventListener('pointermove',e=>{ const r=el.getBoundingClientRect(); el.style.setProperty('--mx',(e.clientX-r.left)+'px'); el.style.setProperty('--my',(e.clientY-r.top)+'px'); }));
+    document.querySelectorAll('.tilt').forEach(el=>{
+      el.addEventListener('pointermove',e=>{ const r=el.getBoundingClientRect(), x=(e.clientX-r.left)/r.width-.5, y=(e.clientY-r.top)/r.height-.5; el.style.transform=`perspective(1000px) rotateY(${x*8}deg) rotateX(${-y*8}deg)`; });
+      el.addEventListener('pointerleave',()=>{ el.style.transform=''; });
+    });
+    document.querySelectorAll('.magnet').forEach(el=>{
+      el.addEventListener('pointermove',e=>{ const r=el.getBoundingClientRect(); el.style.transform=`translate(${(e.clientX-r.left-r.width/2)*.22}px,${(e.clientY-r.top-r.height/2)*.32}px)`; });
+      el.addEventListener('pointerleave',()=>{ el.style.transform=''; });
+    });
+  }
+
+  /* ---------- GSAP: smooth scroll, orchestrated load, reveals, scrubs, stack ---------- */
+  if(motion){
+    gsap.registerPlugin(ScrollTrigger);
+    const E='expo.out';
+    document.querySelectorAll('a[href^="#"]').forEach(a=>a.addEventListener('click',e=>{
+      const id=a.getAttribute('href'); const target=id==='#top'?0:document.querySelector(id); if(target===null) return;
+      e.preventDefault(); setMenu(false);
+      const top=target===0?0:target.getBoundingClientRect().top+scrollY-80; const o={y:scrollY}; gsap.to(o,{y:top,duration:1.1,ease:'power3.inOut',onUpdate:()=>scrollTo(0,o.y)});
+    }));
+
+    /* nav: progress, hide on scroll down, solid after hero */
+    const nav=document.querySelector('.nav');
+    gsap.to('.prog',{scaleX:1,ease:'none',scrollTrigger:{start:0,end:'max',scrub:.3}});
+    ScrollTrigger.create({start:0,end:'max',onUpdate:self=>{ const y=self.scroll(); nav.classList.toggle('solid',y>hero.offsetHeight-120); nav.classList.toggle('away',self.direction===1&&y>320&&!menu.classList.contains('open')); }});
+
+    /* section headings: masked word reveal */
+    document.querySelectorAll('.head h2, .contact h2').forEach(h=>{
+      const walk=n=>{ [...n.childNodes].forEach(c=>{
+        if(c.nodeType===3){ const frag=document.createDocumentFragment(); c.textContent.split(/(\s+)/).forEach(w=>{ if(!w) return; if(/^\s+$/.test(w)) frag.appendChild(document.createTextNode(w)); else { const o=document.createElement('span'); o.className='wd'; const i=document.createElement('span'); i.textContent=w; o.appendChild(i); frag.appendChild(o);} }); c.replaceWith(frag); }
+        else if(c.nodeType===1) walk(c);
+      }); };
+      h.setAttribute('aria-label',h.textContent.trim()); walk(h);
+      const sp=h.querySelectorAll('.wd>span'); gsap.set(sp,{yPercent:112});
+      ScrollTrigger.create({trigger:h,start:'top 86%',once:true,onEnter:()=>gsap.to(sp,{yPercent:0,duration:1.2,ease:E,stagger:.045})});
+    });
+
+    /* preloader: a line charges, the curtain lifts, then the hero assembles */
+    const first=document.querySelector('.name .ln>span'), second=document.querySelector('.name .ln:nth-child(2)>span');
+    gsap.set([first,second],{yPercent:110});
+    gsap.set(['.status','.lede','.ctas'],{opacity:0,y:24});
+    gsap.set(nav,{yPercent:-160});
+    const load=gsap.timeline({defaults:{ease:E}});
+    load.to('.curtain b',{opacity:1,duration:.5,ease:'power2.out'},0)
+        .fromTo(curtain.querySelector('i'),{'--k':0},{'--k':1,duration:.9,ease:'power2.inOut',onUpdate:function(){ curtain.querySelector('i').style.setProperty('--k',this.progress()); }},.1)
+        .to('.curtain b',{opacity:0,duration:.3},.95)
+        .to(curtain,{yPercent:-100,duration:1.1,ease:'expo.inOut',onComplete:()=>curtain.remove()},1.05)
+        .to(first,{yPercent:0,duration:1.4,onStart:decode},1.45)
+        .to(second,{yPercent:0,duration:1.4},1.57)
+        .to('.status',{opacity:1,y:0,duration:1},1.5)
+        .to('.lede',{opacity:1,y:0,duration:1.1},1.85)
+        .to('.ctas',{opacity:1,y:0,duration:1},2)
+        .to(nav,{yPercent:0,duration:1,clearProps:'transform'},2.1)
+        .from('#field',{opacity:0,duration:1.6,ease:'power2.out'},1.4);
+    // curtain line uses a CSS var on ::after via inline style on the parent
+    const st=document.createElement('style'); st.textContent='.curtain i::after{transform:scaleX(var(--k,0))}'; document.head.appendChild(st);
+
+    /* hero scrub: outline name fills with scroll, copy drifts and fades */
+    gsap.to('#l2',{backgroundSize:'100% 100%',ease:'none',scrollTrigger:{trigger:hero,start:'top top',end:'45% top',scrub:.5,fastScrollEnd:true}});
+    gsap.to('.hero .wrap',{y:120,opacity:0,ease:'none',scrollTrigger:{trigger:hero,start:'top top',end:'bottom top',scrub:.35}});
+
+    /* marquee speed follows scroll velocity */
+    const track=document.querySelector('.track'); track.style.animation='none';
+    const mq=gsap.to(track,{xPercent:document.dir==='rtl'?50:-50,duration:42,ease:'none',repeat:-1});
+    ScrollTrigger.create({start:0,end:'max',onUpdate:self=>{ gsap.to(mq,{timeScale:1+Math.min(3,Math.abs(self.getVelocity())/900),duration:.4,overwrite:true}); }});
+    document.querySelector('.marquee').addEventListener('pointerenter',()=>mq.pause()); document.querySelector('.marquee').addEventListener('pointerleave',()=>mq.play());
+
+    /* scrubbed statements */
+    document.querySelectorAll('.scrub').forEach(p=>{
+      const walk=n=>{ [...n.childNodes].forEach(c=>{
+        if(c.nodeType===3){ const frag=document.createDocumentFragment(); c.textContent.split(/(\s+)/).forEach(w=>{ if(!w) return; if(/^\s+$/.test(w)) frag.appendChild(document.createTextNode(w)); else { const s=document.createElement('span'); s.className='w'; s.textContent=w; frag.appendChild(s);} }); c.replaceWith(frag); }
+        else if(c.nodeType===1) walk(c);
+      }); };
+      walk(p);
+      gsap.fromTo(p.querySelectorAll('.w'),{opacity:.16},{opacity:1,ease:'none',stagger:.08,scrollTrigger:{trigger:p,start:'top 82%',end:'bottom 48%',scrub:.6}});
+    });
+
+    /* reveals: rise with a settling scale and blur, batched */
+    ScrollTrigger.batch('.rv',{start:'top 90%',once:true,onEnter:els=>gsap.fromTo(els,{opacity:0,y:56,scale:.97},{opacity:1,y:0,scale:1,duration:1.2,ease:E,stagger:.08,overwrite:true})});
+
+    /* stats: big numbers scale in; rank dots cascade handled above */
+    gsap.from('.st .v',{scale:.8,opacity:0,duration:1.2,ease:E,stagger:.1,scrollTrigger:{trigger:'.stats',start:'top 80%',once:true}});
+
+    /* career: stacking cards + the big letter drifts */
+    ScrollTrigger.matchMedia({
+      '(min-width: 900px)': function(){
+        const cards=[...document.querySelectorAll('#stack .job')];
+        cards.forEach((c,i)=>{
+          if(i===cards.length-1) return;
+          gsap.to(c,{scale:.93,opacity:.45,ease:'none',scrollTrigger:{trigger:cards[i+1],start:'top bottom-=80',end:'top '+(96+(i+1)*20)+'px',scrub:.35}});
+        });
+      }
+    });
+    document.querySelectorAll('.job').forEach(j=>{ gsap.from(j,{y:80,opacity:0,duration:1.3,ease:E,scrollTrigger:{trigger:j,start:'top 88%',once:true}}); gsap.to(j.querySelector('.bigmark'),{y:-60,ease:'none',scrollTrigger:{trigger:j,start:'top bottom',end:'bottom top',scrub:.35}}); });
+    document.querySelectorAll('.job ul').forEach(u=>gsap.from(u.children,{x:-20,opacity:0,duration:1,ease:E,stagger:.1,scrollTrigger:{trigger:u,start:'top 90%',once:true}}));
+
+    /* rules: the batch reveal handles the rows; the arrow wakes up per row */
+    document.querySelectorAll('.rule .arr').forEach(a=>gsap.from(a,{scale:0,rotation:-90,duration:1,ease:'back.out(2)',scrollTrigger:{trigger:a,start:'top 92%',once:true}}));
+
+    /* loop: ring draws itself when it arrives */
+    const arc=document.querySelector('.ring-spin circle');
+    if(arc){ gsap.from(arc,{attr:{'stroke-dasharray':'0 628'},duration:1.6,ease:E,scrollTrigger:{trigger:'.loop',start:'top 80%',once:true}}); }
+    gsap.from('.step',{x:-20,opacity:0,duration:1,ease:E,stagger:.12,scrollTrigger:{trigger:'.steps',start:'top 88%',once:true}});
+
+    /* products: cards rise with a stagger, the flow line draws and lights each step */
+    const flow=document.getElementById('flow'), seg=document.getElementById('seg'), steps=[...flow.querySelectorAll(':scope > div')];
+    gsap.timeline({scrollTrigger:{trigger:flow,start:'top 80%',end:'bottom 55%',scrub:.6}})
+      .to(seg,{scaleX:1,ease:'none',duration:1})
+      .add(()=>{},0);
+    steps.forEach((d,i)=>ScrollTrigger.create({trigger:flow,start:`top ${80-i*8}%`,onEnter:()=>d.classList.add('on'),onLeaveBack:()=>d.classList.remove('on')}));
+
+    /* capabilities tools chips pop */
+    document.querySelectorAll('.cap .tools').forEach(t=>gsap.from(t.children,{scale:.6,opacity:0,duration:.8,ease:'back.out(2)',stagger:.05,scrollTrigger:{trigger:t,start:'top 92%',once:true}}));
+
+    /* contact: headline tightens, glow breathes with scroll */
+    gsap.fromTo('.contact h2',{letterSpacing:'.04em'},{letterSpacing:'-.05em',ease:'none',scrollTrigger:{trigger:'.contact',start:'top 85%',end:'top 30%',scrub:.6}});
+    gsap.from('.mailbox',{scale:.9,opacity:0,duration:1.2,ease:E,scrollTrigger:{trigger:'.mailbox',start:'top 90%',once:true}});
+    gsap.from('.reach>*',{y:40,opacity:0,duration:1.1,ease:E,stagger:.12,scrollTrigger:{trigger:'.reach',start:'top 90%',once:true}});
+  } else { decode(); }
+
+  /* ---------- copy email ---------- */
+  const btn=document.getElementById('copy'), label=btn.querySelector('span'), addr=document.getElementById('addr');
+  btn.addEventListener('click',()=>{
+    const ok=()=>{ btn.classList.add('done'); label.textContent=lang==='ar'?'تم النسخ':'Copied'; document.getElementById('copyLive').textContent=lang==='ar'?'تم نسخ البريد':'Email copied'; setTimeout(()=>{btn.classList.remove('done'); label.textContent=lang==='ar'?'انسخ البريد':'Copy email';},1800); };
+    const fallback=()=>{ const r=document.createRange(); r.selectNodeContents(addr); const s=getSelection(); s.removeAllRanges(); s.addRange(r); label.textContent=lang==='ar'?'تم التحديد، اضغط Ctrl+C':'Selected, press Ctrl+C'; };
+    try{ navigator.clipboard.writeText(addr.textContent).then(ok,fallback); }catch(e){ fallback(); }
+  });
+})();
+</script>
+
+</body></html>
