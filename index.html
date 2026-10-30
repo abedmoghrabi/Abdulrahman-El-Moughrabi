@@ -1,4 +1,8 @@
-<!doctype html><html><head><meta charset=utf8><meta name=viewport content="width=device-width,initial-scale=1,viewport-fit=cover"><style>:root{color-scheme:light;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}html{scroll-padding-top:env(safe-area-inset-top,0px)}body{margin:0;padding:0;font:14px -apple-system,BlinkMacSystemFont,sans-serif;background:#fff;color:#000}img{max-width:100%}[hidden]:not([hidden=until-found i]){display:none!important}</style></head><body>
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>Abdul Rahman El Moughrabi</title>
 <meta name="theme-color" content="#090C12">
 <meta name="description" content="Technology leader, full-stack engineer and AI quality specialist based in Kuwait.">
@@ -290,6 +294,78 @@ section.ch + section.ch{border-top:1px solid var(--line)}
 .flow p{color:var(--muted);font-size:.93rem}
 @media (max-width:760px){.flow{grid-template-columns:1fr 1fr;gap:34px 0}.flow::before,.flow .seg{display:none}}
 
+
+/* lifecycle email: inbox cards and automated flows */
+.mailgrid{display:grid;grid-template-columns:repeat(12,1fr);gap:26px;align-items:start}
+.brandcol{grid-column:span 6;display:grid;gap:26px;min-width:0}
+.bhead{display:flex;align-items:center;gap:14px;padding:4px 4px 0}
+.bhead .lg{width:46px;height:46px;border-radius:14px;display:grid;place-items:center;font-family:var(--display);font-weight:800;font-size:1.1rem;color:var(--ink);flex:none}
+.bhead h3{font-size:1.6rem;letter-spacing:-.03em}
+.bhead p{color:var(--muted);font-size:.95rem}
+.mail{padding:0;display:flex;flex-direction:column}
+.mail .meta{display:grid;grid-template-columns:auto 1fr;gap:6px 14px;padding:18px 22px 14px;border-bottom:1px solid var(--line);font-size:.86rem;color:var(--muted)}
+.mail .meta b{color:var(--fg);font-weight:500;unicode-bidi:plaintext}
+:lang(ar) .mail .tagrow span,:lang(ar) .node i,:lang(ar) .flowc .ttl span,:lang(ar) .node .branch div b{font-family:var(--arabic);letter-spacing:0;text-transform:none;font-size:.78rem}
+.mail .meta .k{font-family:var(--mono);font-size:.66rem;letter-spacing:.14em;text-transform:uppercase;padding-top:3px}
+.mail .body{padding:22px;direction:rtl;text-align:right;font-family:var(--arabic);line-height:1.9;display:flex;flex-direction:column;gap:12px}
+.mail .body h4{font-size:1.25rem;font-weight:700;line-height:1.4}
+.mail .body p{color:var(--soft)}
+.mail .body .cta{align-self:flex-start;display:inline-flex;align-items:center;height:42px;padding:0 20px;border-radius:999px;background:var(--signal);color:var(--ink);font-weight:600;font-size:.95rem}
+.mail .body .cta.cool{background:var(--ice)}
+.mail .body small{color:var(--muted);font-size:.8rem;line-height:1.6}
+.mail .tagrow{display:flex;gap:8px;flex-wrap:wrap;padding:0 22px 20px}
+.mail .tagrow span{font-family:var(--mono);font-size:.66rem;letter-spacing:.12em;text-transform:uppercase;padding:5px 10px;border-radius:999px;border:1px solid var(--line);color:var(--muted)}
+.flowc{padding:22px}
+.flowc .ttl{display:flex;justify-content:space-between;gap:12px;align-items:baseline;margin-bottom:16px;flex-wrap:wrap}
+.flowc .ttl b{font-family:var(--display);font-size:1.15rem;font-weight:600}
+.flowc .ttl span{font-family:var(--mono);font-size:.66rem;letter-spacing:.12em;text-transform:uppercase;color:var(--muted)}
+.nodes{display:flex;flex-direction:column;gap:0}
+.node{display:grid;grid-template-columns:38px 1fr;gap:14px;align-items:start;position:relative;padding-bottom:14px}
+.node::before{content:"";position:absolute;left:18px;top:34px;bottom:0;width:2px;background:var(--line-2)}
+.node:last-child::before{display:none}
+.node i{width:38px;height:38px;border-radius:12px;display:grid;place-items:center;font-style:normal;font-family:var(--mono);font-size:.62rem;letter-spacing:.08em;background:var(--panel-2);border:1px solid var(--line);color:var(--muted);position:relative;z-index:1}
+.node i.t{background:var(--signal);color:var(--ink);border-color:var(--signal)}
+.node i.m{background:var(--ice-soft);color:var(--ice);border-color:rgba(134,211,255,.3)}
+.node i.c{border-style:dashed}
+.node div b{display:block;font-weight:500}
+.node div span{color:var(--muted);font-size:.9rem}
+.node .branch{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-top:8px}
+.node .branch div{padding:10px 12px;border-radius:12px;background:var(--shell);border:1px solid var(--line);font-size:.86rem}
+.node .branch div b{font-family:var(--mono);font-size:.62rem;letter-spacing:.12em;text-transform:uppercase;color:var(--signal);margin-bottom:4px}
+.node .branch div.no b{color:var(--ice)}
+.samplenote{margin-top:26px;display:flex;gap:12px;align-items:flex-start;padding:16px 20px;border-radius:16px;border:1px dashed var(--line-2);color:var(--muted);font-size:.92rem}
+.samplenote svg{width:18px;height:18px;flex:none;margin-top:3px;color:var(--signal)}
+.principles{display:grid;grid-template-columns:repeat(4,1fr);gap:22px;margin-bottom:clamp(40px,5vw,64px)}
+.principle{padding:22px 24px;display:flex;flex-direction:column;gap:8px}
+.principle b{font-family:var(--display);font-size:1.15rem;font-weight:600;letter-spacing:-.02em}
+.principle p{color:var(--muted);font-size:.92rem}
+.principle .mono{color:var(--signal)}
+@media (max-width:980px){.principles{grid-template-columns:1fr 1fr}}
+@media (max-width:560px){.principles{grid-template-columns:1fr}}
+.mail .chrome{display:flex;align-items:center;justify-content:space-between;gap:12px;padding:12px 18px;background:var(--panel-2);border-bottom:1px solid var(--line);font-size:.78rem;color:var(--muted)}
+.mail .chrome .mk{display:flex;align-items:center;gap:8px;font-weight:600;color:var(--fg)}
+.mail .chrome .mk i{width:22px;height:22px;border-radius:7px;display:grid;place-items:center;font-style:normal;font-size:.7rem;font-weight:800;color:var(--ink);font-family:var(--display)}
+.mail .chrome .seq{font-family:var(--mono);font-size:.64rem;letter-spacing:.12em;text-transform:uppercase}
+.mail .ab{display:grid;gap:6px;padding:0 22px 16px}
+.mail .ab span{display:flex;gap:10px;align-items:baseline;font-size:.86rem;color:var(--soft);direction:rtl;font-family:var(--arabic)}
+.mail .ab span b{font-family:var(--mono);font-size:.62rem;letter-spacing:.12em;color:var(--ice);flex:none;padding-top:2px}
+.mail .body .hl{padding:14px 16px;border-radius:14px;background:var(--shell);border:1px solid var(--line);display:grid;gap:4px}
+.mail .body .hl b{font-size:1.05rem}
+.mail .body .hl span{color:var(--muted);font-size:.86rem}
+.mail .body .score{display:flex;align-items:center;justify-content:center;gap:18px;padding:16px;border-radius:14px;background:var(--shell);border:1px solid var(--line);font-family:var(--display);font-size:2rem;font-weight:700;letter-spacing:-.03em}
+.mail .body .score small{font-family:var(--arabic);font-size:.85rem;font-weight:400;color:var(--muted)}
+.mail .body .grid3{display:grid;grid-template-columns:repeat(3,1fr);gap:8px}
+.mail .body .grid3 div{padding:12px 10px;border-radius:12px;background:var(--shell);border:1px solid var(--line);text-align:center;font-size:.86rem}
+.mail .body .grid3 b{display:block;font-family:var(--display);font-size:1.3rem;font-weight:600;color:var(--signal)}
+.mail .foot{padding:12px 22px 16px;border-top:1px solid var(--line);direction:rtl;text-align:right;font-family:var(--arabic);font-size:.74rem;color:var(--dim);line-height:1.7}
+.node .send{display:flex;gap:6px;align-items:center;margin-top:6px;font-family:var(--mono);font-size:.62rem;letter-spacing:.1em;text-transform:uppercase;color:var(--ice)}
+.node .send::before{content:"";width:6px;height:6px;border-radius:50%;background:var(--ice)}
+:lang(ar) .mail .chrome .seq,:lang(ar) .mail .ab span b,:lang(ar) .node .send,:lang(ar) .principle .mono{font-family:var(--arabic);letter-spacing:0;text-transform:none;font-size:.78rem}
+@media (max-width:980px){.brandcol{grid-column:span 12}}
+[dir=rtl] .mail .meta{direction:rtl}
+[dir=rtl] .node::before{left:auto;right:18px}
+:lang(ar) .bhead h3,:lang(ar) .flowc .ttl b{font-family:var(--arabic)}
+
 /* engineering bento */
 .eng{display:grid;grid-template-columns:repeat(3,1fr);grid-auto-flow:dense;gap:26px}
 .repo{display:flex;flex-direction:column;gap:12px}
@@ -379,6 +455,8 @@ footer .wrap{display:flex;justify-content:space-between;flex-wrap:wrap;gap:12px}
   .track,.ring-spin,.ring-dash,.pulse,.live::before,.dots i.me,.contact::before{animation:none}
 }
 </style>
+</head>
+<body>
 
 <a class="skip" href="#about" data-ar="تخطَّ إلى المحتوى">Skip to content</a>
 <div class="curtain" id="curtain" aria-hidden="true"><b>ARM</b><i></i></div>
@@ -392,6 +470,7 @@ footer .wrap{display:flex;justify-content:space-between;flex-wrap:wrap;gap:12px}
     <li><a href="#career" data-ar="المسيرة">Career</a></li>
     <li><a href="#ai" data-ar="الذكاء الاصطناعي والجودة">AI &amp; Quality</a></li>
     <li><a href="#work" data-ar="الأعمال">Work</a></li>
+    <li><a href="#lifecycle" data-ar="البريد">Email</a></li>
     <li><a href="#engineering" data-ar="الهندسة">Engineering</a></li>
     <li><a href="#credentials" data-ar="المؤهلات">Credentials</a></li>
   </ul>
@@ -406,6 +485,7 @@ footer .wrap{display:flex;justify-content:space-between;flex-wrap:wrap;gap:12px}
   <a href="#career" data-ar="المسيرة">Career</a>
   <a href="#ai" data-ar="الذكاء الاصطناعي والجودة">AI &amp; Quality</a>
   <a href="#work" data-ar="الأعمال">Work</a>
+  <a href="#lifecycle" data-ar="البريد">Email</a>
   <a href="#engineering" data-ar="الهندسة">Engineering</a>
   <a href="#credentials" data-ar="المؤهلات">Credentials</a>
   <a href="#contact" data-ar="تواصل">Contact</a>
@@ -645,6 +725,146 @@ footer .wrap{display:flex;justify-content:space-between;flex-wrap:wrap;gap:12px}
       <div><i>03</i><b data-ar="اختبر">Test</b><p data-ar="تصحيح السيناريوهات وتقليل مخاطر التراجع.">Debug scenarios and reduce regression risk.</p></div>
       <div><i>04</i><b data-ar="ادعم">Support</b><p data-ar="تجهيز الإصدارات والبيئات وعمليات التسليم.">Prepare versions, environments and handoffs.</p></div>
     </div>
+  </div>
+</section>
+
+<!-- LIFECYCLE -->
+<section class="ch" id="lifecycle">
+  <div class="wrap">
+    <div class="head">
+      <h2 data-ar="بريد يقرأه الناس بلغتهم.">Email people actually read, in their own language.</h2>
+      <p data-ar="حملات وتدفقات آلية مكتوبة بالعربية لتطبيق أتحداك ومتجر ملتيكون: ترحيب، ويوم مباراة، وسلة متروكة، وما بعد الشراء، وعودة التوفر. كل رسالة قصيرة، لها هدف واحد، وزر واحد.">Arabic campaigns and automated flows for the Athadak app and the Multicon store: welcome, match day, abandoned cart, post-purchase and back in stock. Every message is short, has one job and one button.</p>
+    </div>
+
+    <div class="principles">
+      <div class="principle bz rv"><span class="mono" data-ar="01">01</span><b data-ar="مهمة واحدة لكل رسالة">One job per email</b><p data-ar="زر واحد، وفكرة واحدة. إذا احتاجت الرسالة زرّين، فهي رسالتان.">One button, one idea. If a message needs two buttons, it is two messages.</p></div>
+      <div class="principle bz rv"><span class="mono" data-ar="02">02</span><b data-ar="عربية تُكتب، لا تُترجم">Arabic written, not translated</b><p data-ar="صيغة المخاطَب الصحيحة، وأرقام هندية حيث يتوقعها القارئ، وتوقيت الكويت دائمًا.">The right address for the reader, local conventions for numbers and dates, Kuwait time always.</p></div>
+      <div class="principle bz rv"><span class="mono" data-ar="03">03</span><b data-ar="لكل تدفق مخرج">Every flow has an exit</b><p data-ar="تدفق يتوقف عند تحقق الهدف، ولا يعيد العميل إليه للحدث نفسه، ولا يرسل أكثر من رسالة في اليوم.">A flow stops when its goal is met, never re-enters a person for the same event, and never sends more than one message a day.</p></div>
+      <div class="principle bz rv"><span class="mono" data-ar="04">04</span><b data-ar="نسختان لكل عنوان">Two subject lines, always</b><p data-ar="كل حملة تُرسل بعنوانين إلى 10% أولًا، ثم يذهب الفائز إلى البقية بعد ساعتين.">Every campaign goes out with two subjects to 10% first; the winner goes to the rest two hours later.</p></div>
+    </div>
+
+    <div class="mailgrid">
+      <div class="brandcol">
+        <div class="bhead rv"><span class="lg" style="background:var(--signal)" aria-hidden="true">A</span><div><h3 data-ar="أتحداك">Athadak</h3><p data-ar="تطبيق كرة قدم، أكثر من 1,000 مستخدم. الهدف: فرق تُنشأ، ومباريات تُلعب، ولاعبون يعودون.">Football app, 1,000+ users. The goals: teams created, matches played, players coming back.</p></div></div>
+        <article class="card bz spot rv flowc">
+          <div class="ttl"><b data-ar="تدفق الترحيب">Welcome flow</b><span data-ar="المحفّز: إنشاء حساب">Trigger: account created</span></div>
+          <div class="nodes"><div class="node"><i class="t">GO</i><div><b data-ar="يسجّل لاعب جديد">A new player signs up</b><span data-ar="يبدأ التدفق فورًا">Flow starts immediately</span></div></div><div class="node"><i class="m">@</i><div><b data-ar="رسالة 1: أهلًا بك في أتحداك">Email 1: Welcome to Athadak</b><span data-ar="مهمة واحدة: أنشئ فريقًا أو انضم إلى فريق">One job: create or join a team</span><div class="send" data-ar="خلال دقيقة">Within 1 minute</div></div></div><div class="node"><i class="">48h</i><div><b data-ar="انتظار يومين">Wait two days</b></div></div><div class="node"><i class="c">?</i><div><b data-ar="هل انضم إلى فريق أو أنشأ واحدًا؟">Joined or created a team?</b><div class="branch"><div class=""><b data-ar="نعم">Yes</b><span data-ar="إشعار: جاهز لأول مباراة؟ تحدَّ فريقًا قريبًا">Push: Ready for a first match? Challenge a team nearby</span></div><div class="no"><b data-ar="لا">No</b><span data-ar="رسالة 2: فريقك ينتظرك، مع شرح رمز الدعوة">Email 2: Your team is waiting, with the invite code explained</span></div></div></div></div><div class="node"><i class="">7d</i><div><b data-ar="بعد أسبوع بلا مباراة">A week with no match</b><span data-ar="رسالة 3: أقرب ملعب والمباريات المفتوحة هذا الأسبوع. ثم ينتهي التدفق.">Email 3: the nearest pitch and this week's open matches. Then the flow ends.</span><div class="send" data-ar="الخميس 6:00 مساءً بتوقيت الكويت">Thursday 6:00 pm, Kuwait</div></div></div></div>
+        </article>
+        <article class="card bz spot rv mail">
+          <div class="chrome"><span class="mk" translate="no"><i style="background:var(--signal)">A</i>أتحداك</span><span class="seq">1 / 3 · Welcome</span></div>
+          <div class="meta"><span class="k">From</span><b translate="no">أتحداك &lt;hello@athadak.app&gt;</b><span class="k">Subject</span><b>أهلًا بك في أتحداك، محمد. الملعب جاهز.</b><span class="k">Preview</span><b>فريقك الأول على بُعد دقيقتين.</b></div>
+          <div class="ab"><span><b>A</b>أهلًا بك في أتحداك، محمد. الملعب جاهز.</span><span><b>B</b>محمد، فريقك الأول ينتظر اسمًا.</span></div>
+          <div class="body"><h4>محمد، أهلًا بك في أتحداك.</h4><p>هنا تلتقي الفرق، وتُحدَّد المباريات، وتُحسب النقاط. أول خطوة واحدة فقط: أنشئ فريقك، أو انضم إلى فريق أصدقائك برمز الدعوة.</p><div class="grid3"><div><b>1</b>أنشئ فريقك</div><div><b>2</b>تحدَّ فريقًا</div><div><b>3</b>اجمع النقاط</div></div><span class="cta">أنشئ فريقك الآن</span><small>لديك رمز دعوة؟ افتح التطبيق واختر «انضم إلى فريق».</small></div>
+          <div class="foot">تصلك هذه الرسالة لأنك مسجّل في الخدمة. إلغاء الاشتراك بضغطة واحدة من أسفل أي رسالة، ولا نرسل أكثر من رسالة واحدة في اليوم.</div>
+          <div class="tagrow"><span data-ar="ترحيب">Welcome</span><span data-ar="آلي">Automated</span><span data-ar="هدف: إنشاء فريق">Goal: create a team</span></div>
+        </article>
+        <article class="card bz spot rv flowc">
+          <div class="ttl"><b data-ar="تدفق يوم المباراة">Match day flow</b><span data-ar="المحفّز: تأكيد المباراة">Trigger: match confirmed</span></div>
+          <div class="nodes"><div class="node"><i class="t">GO</i><div><b data-ar="يؤكد القائدان المباراة">Both captains confirm a match</b><span data-ar="يرتبط التدفق بموعد المباراة">Flow attaches to the fixture time</span></div></div><div class="node"><i class="">-24h</i><div><b data-ar="قبل يوم">The day before</b><span data-ar="إشعار للفريقين: الموعد والملعب ومن أكّد حضوره">Push to both squads: time, pitch and who has confirmed</span></div></div><div class="node"><i class="m">@</i><div><b data-ar="رسالة: ورقة المباراة، قبل ساعتين">Email: Match sheet, 2 hours before</b><span data-ar="موقع الملعب والتشكيلة وزر واحد لتأكيد الحضور">Pitch location, lineup, and one button to confirm attendance</span><div class="send" data-ar="قبل ساعتين من الانطلاق">2 hours before kickoff</div></div></div><div class="node"><i class="c">?</i><div><b data-ar="هل أُدخلت النتيجة خلال 3 ساعات؟">Result entered within 3 hours?</b><div class="branch"><div class=""><b data-ar="نعم">Yes</b><span data-ar="رسالة: النتيجة النهائية والنقاط والمركز الجديد في الجدول">Email: full-time result, points and the new table position</span></div><div class="no"><b data-ar="لا">No</b><span data-ar="إشعار للقائدين: أدخل النتيجة لتثبيت النقاط">Push to both captains: enter the result to lock the points</span></div></div></div></div><div class="node"><i class="">+3d</i><div><b data-ar="بعد ثلاثة أيام">Three days later</b><span data-ar="إشعار: أقرب موعد مفتوح وفريقان في مستواك">Push: your next open slot and two teams at your level</span></div></div></div>
+        </article>
+        <article class="card bz spot rv mail">
+          <div class="chrome"><span class="mk" translate="no"><i style="background:var(--signal)">A</i>أتحداك</span><span class="seq">Match day · 2 h before</span></div>
+          <div class="meta"><span class="k">From</span><b translate="no">أتحداك &lt;hello@athadak.app&gt;</b><span class="k">Subject</span><b>ورقة المباراة: صبادة ضد النخبة، الليلة 8:00</b><span class="k">Preview</span><b>الملعب، والتشكيلة، ومن أكّد حضوره.</b></div>
+          
+          <div class="body"><h4>الليلة 8:00 مساءً. ملعب الشهيد، الفروانية.</h4><div class="hl"><b>صبادة ضد النخبة</b><span>الجمعة، 8:00 مساءً. مدة المباراة 60 دقيقة. أكّد حضوره 9 من 11.</span></div><p>اثنان لم يؤكدا بعد: فهد وعبدالله. ضغطة واحدة تُكمل التشكيلة.</p><span class="cta">أؤكد حضوري</span><small>الموقع على الخريطة في التطبيق. وصل مبكرًا بعشر دقائق للتسجيل عند الملعب.</small></div>
+          <div class="foot">تصلك هذه الرسالة لأنك مسجّل في الخدمة. إلغاء الاشتراك بضغطة واحدة من أسفل أي رسالة، ولا نرسل أكثر من رسالة واحدة في اليوم.</div>
+          <div class="tagrow"><span data-ar="يوم المباراة">Match day</span><span data-ar="آلي">Automated</span><span data-ar="للفريق فقط">Squad only</span></div>
+        </article>
+        <article class="card bz spot rv mail">
+          <div class="chrome"><span class="mk" translate="no"><i style="background:var(--signal)">A</i>أتحداك</span><span class="seq">Match day · Full time</span></div>
+          <div class="meta"><span class="k">From</span><b translate="no">أتحداك &lt;hello@athadak.app&gt;</b><span class="k">Subject</span><b>النتيجة النهائية: صبادة 3، النخبة 1</b><span class="k">Preview</span><b>ثلاث نقاط، والمركز الرابع في الجدول.</b></div>
+          
+          <div class="body"><h4>فوز. ثلاث نقاط للفريق.</h4><div class="score">3 <small>صبادة</small> &nbsp;:&nbsp; 1 <small>النخبة</small></div><p>انتقل فريقك إلى المركز الرابع في جدول الموسم، على بُعد نقطتين من المركز الثالث. أقرب موعد مفتوح يناسب مستواكم: الثلاثاء 9:00 مساءً.</p><span class="cta">احجز المباراة التالية</span><small>النقاط تُثبَّت بعد تأكيد القائدين. أي اعتراض خلال 24 ساعة من داخل صفحة المباراة.</small></div>
+          <div class="foot">تصلك هذه الرسالة لأنك مسجّل في الخدمة. إلغاء الاشتراك بضغطة واحدة من أسفل أي رسالة، ولا نرسل أكثر من رسالة واحدة في اليوم.</div>
+          <div class="tagrow"><span data-ar="النتيجة">Result</span><span data-ar="آلي">Automated</span><span data-ar="معاملاتي">Transactional</span></div>
+        </article>
+        <article class="card bz spot rv mail">
+          <div class="chrome"><span class="mk" translate="no"><i style="background:var(--signal)">A</i>أتحداك</span><span class="seq">Campaign · Season launch</span></div>
+          <div class="meta"><span class="k">From</span><b translate="no">أتحداك &lt;hello@athadak.app&gt;</b><span class="k">Subject</span><b>الموسم الجديد يبدأ الجمعة. فريقك مسجّل؟</b><span class="k">Preview</span><b>النقاط تبدأ من الصفر للجميع. هذه فرصتك.</b></div>
+          <div class="ab"><span><b>A</b>الموسم الجديد يبدأ الجمعة. فريقك مسجّل؟</span><span><b>B</b>صبادة ليست في الجدول بعد.</span></div>
+          <div class="body"><h4>موسم جديد. جدول جديد. نقاط من الصفر.</h4><p>ينطلق الموسم الجديد يوم الجمعة. كل فريق مسجّل قبل الانطلاق يدخل الجدول من المباراة الأولى، ويظهر في إنجازات الموسم مع كل فوز.</p><p>فريق «صبادة» لم ينضم بعد. التسجيل يأخذ أقل من دقيقة من صفحة الفريق.</p><span class="cta">سجّل الفريق في الموسم</span><small>آخر موعد للتسجيل: الخميس، 11:59 مساءً بتوقيت الكويت.</small></div>
+          <div class="foot">تصلك هذه الرسالة لأنك مسجّل في الخدمة. إلغاء الاشتراك بضغطة واحدة من أسفل أي رسالة، ولا نرسل أكثر من رسالة واحدة في اليوم.</div>
+          <div class="tagrow"><span data-ar="حملة">Campaign</span><span data-ar="إطلاق الموسم">Season launch</span><span data-ar="مقسّمة: فرق غير مسجّلة">Segment: unregistered teams</span></div>
+        </article>
+        <article class="card bz spot rv mail">
+          <div class="chrome"><span class="mk" translate="no"><i style="background:var(--signal)">A</i>أتحداك</span><span class="seq">Win-back · Day 21</span></div>
+          <div class="meta"><span class="k">From</span><b translate="no">أتحداك &lt;hello@athadak.app&gt;</b><span class="k">Subject</span><b>الملعب اشتاق لك. مباراة واحدة؟</b><span class="k">Preview</span><b>ثلاث مباريات مفتوحة قريبة منك هذا الأسبوع.</b></div>
+          
+          <div class="body"><h4>مرّ وقت منذ آخر مباراة.</h4><p>فريقك ما زال في الجدول، ونقاطك محفوظة. هذه المباريات المفتوحة الأقرب إليك هذا الأسبوع:</p><div class="grid3"><div><b>الجمعة</b>8:00 مساءً</div><div><b>السبت</b>7:30 مساءً</div><div><b>السبت</b>9:00 مساءً</div></div><span class="cta">اختر مباراة</span><small>تُرسل هذه الرسالة مرة واحدة بعد 21 يومًا من دون نشاط.</small></div>
+          <div class="foot">تصلك هذه الرسالة لأنك مسجّل في الخدمة. إلغاء الاشتراك بضغطة واحدة من أسفل أي رسالة، ولا نرسل أكثر من رسالة واحدة في اليوم.</div>
+          <div class="tagrow"><span data-ar="استعادة">Win-back</span><span data-ar="آلي: 21 يومًا بلا نشاط">Automated: 21 days inactive</span></div>
+        </article>
+        <article class="card bz spot rv mail">
+          <div class="chrome"><span class="mk" translate="no"><i style="background:var(--signal)">A</i>أتحداك</span><span class="seq">Campaign · Referral</span></div>
+          <div class="meta"><span class="k">From</span><b translate="no">أتحداك &lt;hello@athadak.app&gt;</b><span class="k">Subject</span><b>لاعب ناقص؟ ادعُ صديقًا، والمباراة الأولى علينا</b><span class="k">Preview</span><b>لكل لاعب تدعوه ويلعب مباراة، شارة ونقاط لفريقك.</b></div>
+          
+          <div class="body"><h4>الفريق الكامل يلعب أكثر.</h4><p>شارك رمز فريقك مع صديق. عندما يسجّل ويلعب أول مباراة، يحصل كلاكما على شارة «المؤسّس» ونقطة إضافية للفريق في الجدول.</p><div class="hl"><b>رمز فريقك: SBD-7741</b><span>صالح لعشر دعوات هذا الموسم.</span></div><span class="cta">شارك الرمز</span></div>
+          <div class="foot">تصلك هذه الرسالة لأنك مسجّل في الخدمة. إلغاء الاشتراك بضغطة واحدة من أسفل أي رسالة، ولا نرسل أكثر من رسالة واحدة في اليوم.</div>
+          <div class="tagrow"><span data-ar="حملة">Campaign</span><span data-ar="إحالة">Referral</span><span data-ar="للقادة فقط">Captains only</span></div>
+        </article>
+      </div>
+      <div class="brandcol">
+        <div class="bhead rv"><span class="lg" style="background:var(--ice)" aria-hidden="true">M</span><div><h3 data-ar="ملتيكون">Multicon</h3><p data-ar="متجر هدايا وكماليات، بيع في المتجر والمعارض وعبر الإنترنت. الهدف: سلة مكتملة، وعميل يعود، وتقييم يُكتب.">Gifts and accessories retail, in store, at exhibitions and online. The goals: carts completed, customers returning, reviews written.</p></div></div>
+        <article class="card bz spot rv flowc">
+          <div class="ttl"><b data-ar="تدفق السلة المتروكة">Abandoned cart flow</b><span data-ar="المحفّز: سلة بلا دفع">Trigger: cart with no checkout</span></div>
+          <div class="nodes"><div class="node"><i class="t">GO</i><div><b data-ar="يضيف العميل منتجًا ويغادر">A customer adds an item and leaves</b><span data-ar="يبدأ العدّ بعد 60 دقيقة بلا دفع">Timer starts after 60 minutes without checkout</span></div></div><div class="node"><i class="m">@</i><div><b data-ar="رسالة 1: نسيت شيئًا؟">Email 1: Forgot something?</b><span data-ar="صورة المنتج واسمه، وزر واحد يعيد العميل إلى سلته">The product's photo and name, and one button back to the cart</span><div class="send" data-ar="بعد 60 دقيقة من المغادرة">60 minutes after leaving</div></div></div><div class="node"><i class="">24h</i><div><b data-ar="انتظار يوم">Wait one day</b></div></div><div class="node"><i class="c">?</i><div><b data-ar="هل أتمّ الشراء؟">Purchased?</b><div class="branch"><div class=""><b data-ar="نعم">Yes</b><span data-ar="يخرج من التدفق ويدخل تدفق ما بعد الشراء">Exits, enters the post-purchase flow</span></div><div class="no"><b data-ar="لا">No</b><span data-ar="رسالة 2: الشحن علينا هذه المرة">Email 2: Shipping is on us this time</span></div></div></div></div><div class="node"><i class="">3d</i><div><b data-ar="بعد ثلاثة أيام">Three days later</b><span data-ar="الرسالة الأخيرة: السلة تنتهي خلال 24 ساعة. ثم يتوقف التدفق، ولا يعود العميل إليه للسلة نفسها.">Last email: the cart expires in 24 hours. Then the flow stops, and the customer is never re-entered for the same cart.</span></div></div></div>
+        </article>
+        <article class="card bz spot rv mail">
+          <div class="chrome"><span class="mk" translate="no"><i style="background:var(--ice)">M</i>ملتيكون</span><span class="seq">1 / 3 · Abandoned cart</span></div>
+          <div class="meta"><span class="k">From</span><b translate="no">ملتيكون &lt;hello@multicon.kw&gt;</b><span class="k">Subject</span><b>نسيت شيئًا في سلتك، سارة؟</b><span class="k">Preview</span><b>ما زال محفوظًا لك. خطوة واحدة وتصلك الهدية.</b></div>
+          <div class="ab"><span><b>A</b>نسيت شيئًا في سلتك، سارة؟</span><span><b>B</b>علبة الهدايا الخشبية ما زالت محفوظة لك.</span></div>
+          <div class="body"><h4>سلتك ما زالت محفوظة.</h4><div class="hl"><b>علبة هدايا خشبية مع ساعة مكتب</b><span>الكمية محدودة. محفوظة لك ليوم واحد.</span></div><p>التوصيل داخل الكويت خلال يوم إلى يومين، والدفع عند الاستلام متاح.</p><span class="cta cool">أكملي الطلب</span><small>غيّرتِ رأيك؟ لا مشكلة. هذه الرسالة الأولى من ثلاث، ولن نذكّرك بعدها.</small></div>
+          <div class="foot">تصلك هذه الرسالة لأنك مسجّل في الخدمة. إلغاء الاشتراك بضغطة واحدة من أسفل أي رسالة، ولا نرسل أكثر من رسالة واحدة في اليوم.</div>
+          <div class="tagrow"><span data-ar="سلة متروكة">Abandoned cart</span><span data-ar="آلي: بعد 60 دقيقة">Automated: after 60 minutes</span></div>
+        </article>
+        <article class="card bz spot rv flowc">
+          <div class="ttl"><b data-ar="تدفق ما بعد الشراء">Post-purchase flow</b><span data-ar="المحفّز: دفع الطلب">Trigger: order paid</span></div>
+          <div class="nodes"><div class="node"><i class="t">GO</i><div><b data-ar="تم دفع الطلب">Order paid</b><span data-ar="رسالة تأكيد خلال دقيقة، مع ملخص الطلب ونافذة التوصيل">Confirmation email within a minute, with the order summary and delivery window</span></div></div><div class="node"><i class="m">@</i><div><b data-ar="رسالة: طلبك في الطريق">Email: On its way</b><span data-ar="تُرسل عند مسح المندوب للطرد، مع رابط تتبع مباشر">Sent when the courier scans the parcel, with a live tracking link</span><div class="send" data-ar="عند مسح المندوب">On courier scan</div></div></div><div class="node"><i class="">+7d</i><div><b data-ar="بعد أسبوع من التوصيل">A week after delivery</b><span data-ar="رسالة: كيف كانت الهدية؟ طلب تقييم بسطر واحد">Email: How was the gift? One-line review request</span></div></div><div class="node"><i class="c">?</i><div><b data-ar="هل كتب تقييمًا؟">Left a review?</b><div class="branch"><div class=""><b data-ar="نعم">Yes</b><span data-ar="رسالة: شكرًا، مع وصول مبكر للتشكيلة القادمة">Email: thank you, with early access to the next collection</span></div><div class="no"><b data-ar="لا">No</b><span data-ar="لا شيء. الصمت فرع مقبول.">Nothing. Silence is a valid branch.</span></div></div></div></div><div class="node"><i class="">+45d</i><div><b data-ar="بعد 45 يومًا">45 days later</b><span data-ar="رسالة: تذكير بمناسبة قادمة، مع ثلاثة اختيارات بأقل من سعر الطلب السابق">Email: an occasion reminder, with three picks under the price of the last order</span></div></div></div>
+        </article>
+        <article class="card bz spot rv mail">
+          <div class="chrome"><span class="mk" translate="no"><i style="background:var(--ice)">M</i>ملتيكون</span><span class="seq">Transactional · Shipped</span></div>
+          <div class="meta"><span class="k">From</span><b translate="no">ملتيكون &lt;hello@multicon.kw&gt;</b><span class="k">Subject</span><b>طلبك 4127 في الطريق إليك</b><span class="k">Preview</span><b>المندوب استلم الطرد. التوصيل غدًا بين 4 و8 مساءً.</b></div>
+          
+          <div class="body"><h4>في الطريق.</h4><div class="grid3"><div><b>✓</b>تم التأكيد</div><div><b>✓</b>تم الشحن</div><div><b>غدًا</b>التوصيل</div></div><p>سيتصل بك المندوب قبل الوصول بنصف ساعة. إذا لم يناسبك الموعد، غيّريه من رابط التتبع.</p><span class="cta cool">تتبّعي الطلب</span><small>الطلب مغلّف كهدية كما طلبتِ، من دون فاتورة داخل العلبة.</small></div>
+          <div class="foot">تصلك هذه الرسالة لأنك مسجّل في الخدمة. إلغاء الاشتراك بضغطة واحدة من أسفل أي رسالة، ولا نرسل أكثر من رسالة واحدة في اليوم.</div>
+          <div class="tagrow"><span data-ar="ما بعد الشراء">Post-purchase</span><span data-ar="معاملاتي">Transactional</span><span data-ar="آلي: عند مسح المندوب">Automated: on courier scan</span></div>
+        </article>
+        <article class="card bz spot rv mail">
+          <div class="chrome"><span class="mk" translate="no"><i style="background:var(--ice)">M</i>ملتيكون</span><span class="seq">Post-purchase · Day 7</span></div>
+          <div class="meta"><span class="k">From</span><b translate="no">ملتيكون &lt;hello@multicon.kw&gt;</b><span class="k">Subject</span><b>وصلت هديتك؟ أخبرينا كيف كانت.</b><span class="k">Preview</span><b>تقييمك يساعد عميلًا آخر على الاختيار.</b></div>
+          
+          <div class="body"><h4>سارة، كيف كانت الهدية؟</h4><p>وصل طلبك رقم 4127 قبل أسبوع. نودّ أن نعرف رأيك في المنتج وفي التغليف والتوصيل، بكلمة واحدة أو بسطر.</p><span class="cta cool">قيّمي الهدية</span><small>تصلك هذه الرسالة مرة واحدة بعد سبعة أيام من التوصيل.</small></div>
+          <div class="foot">تصلك هذه الرسالة لأنك مسجّل في الخدمة. إلغاء الاشتراك بضغطة واحدة من أسفل أي رسالة، ولا نرسل أكثر من رسالة واحدة في اليوم.</div>
+          <div class="tagrow"><span data-ar="ما بعد الشراء">Post-purchase</span><span data-ar="آلي: 7 أيام بعد التوصيل">Automated: 7 days after delivery</span></div>
+        </article>
+        <article class="card bz spot rv mail">
+          <div class="chrome"><span class="mk" translate="no"><i style="background:var(--ice)">M</i>ملتيكون</span><span class="seq">Campaign · Eid</span></div>
+          <div class="meta"><span class="k">From</span><b translate="no">ملتيكون &lt;hello@multicon.kw&gt;</b><span class="k">Subject</span><b>دليل هدايا العيد: اختيار لكل شخص في قائمتك</b><span class="k">Preview</span><b>عشر هدايا بين 5 و50 دينارًا، تصل قبل العيد.</b></div>
+          <div class="ab"><span><b>A</b>دليل هدايا العيد: اختيار لكل شخص في قائمتك</span><span><b>B</b>ما زال هناك وقت للهدايا. بالكاد.</span></div>
+          <div class="body"><h4>عشر هدايا، ثلاث فئات، كلها تصل قبل العيد.</h4><div class="grid3"><div><b>5 إلى 10</b>دنانير</div><div><b>10 إلى 25</b>دينارًا</div><div><b>25 إلى 50</b>دينارًا</div></div><p>اخترنا من كل فئة ما يناسب الأهل والأصدقاء وزملاء العمل، مع تغليف العيد مجانًا على كل القطع.</p><span class="cta cool">تصفّحي الدليل</span><small>آخر موعد لضمان الوصول قبل العيد: الثلاثاء، 10:00 مساءً.</small></div>
+          <div class="foot">تصلك هذه الرسالة لأنك مسجّل في الخدمة. إلغاء الاشتراك بضغطة واحدة من أسفل أي رسالة، ولا نرسل أكثر من رسالة واحدة في اليوم.</div>
+          <div class="tagrow"><span data-ar="حملة">Campaign</span><span data-ar="موسمية">Seasonal</span><span data-ar="القائمة كاملة">Full list</span></div>
+        </article>
+        <article class="card bz spot rv mail">
+          <div class="chrome"><span class="mk" translate="no"><i style="background:var(--ice)">M</i>ملتيكون</span><span class="seq">Campaign · Exhibition</span></div>
+          <div class="meta"><span class="k">From</span><b translate="no">ملتيكون &lt;hello@multicon.kw&gt;</b><span class="k">Subject</span><b>ثلاثة أيام فقط: ملتيكون في المعرض</b><span class="k">Preview</span><b>تشكيلة جديدة، وأسعار خاصة للمعرض، وتغليف مجاني.</b></div>
+          
+          <div class="body"><h4>نلتقي في المعرض، الخميس إلى السبت.</h4><p>نعرض التشكيلة الجديدة من الهدايا والكماليات لأول مرة، بأسعار خاصة بالمعرض وتغليف مجاني لكل قطعة. أرِنا هذه الرسالة في الجناح لتحصل على التغليف الفاخر.</p><div class="hl"><b>الجناح B14، القاعة الرئيسية</b><span>الخميس إلى السبت، 4:00 إلى 10:00 مساءً.</span></div><span class="cta cool">احفظ موقع الجناح</span><small>لا تستطيع الحضور؟ التشكيلة كاملة في المتجر الإلكتروني من الأحد.</small></div>
+          <div class="foot">تصلك هذه الرسالة لأنك مسجّل في الخدمة. إلغاء الاشتراك بضغطة واحدة من أسفل أي رسالة، ولا نرسل أكثر من رسالة واحدة في اليوم.</div>
+          <div class="tagrow"><span data-ar="حملة">Campaign</span><span data-ar="دعوة معرض">Exhibition invite</span><span data-ar="القائمة كاملة">Full list</span></div>
+        </article>
+        <article class="card bz spot rv mail">
+          <div class="chrome"><span class="mk" translate="no"><i style="background:var(--ice)">M</i>ملتيكون</span><span class="seq">Automated · Back in stock</span></div>
+          <div class="meta"><span class="k">From</span><b translate="no">ملتيكون &lt;hello@multicon.kw&gt;</b><span class="k">Subject</span><b>عادت: الشمعة الرخامية التي طلبتِ إشعارًا عنها</b><span class="k">Preview</span><b>خمس قطع فقط هذه المرة.</b></div>
+          
+          <div class="body"><h4>عادت إلى المتجر.</h4><div class="hl"><b>شمعة رخامية بغطاء نحاسي</b><span>طلبتِ إشعارًا في 14 أكتوبر. متوفرة الآن بخمس قطع.</span></div><p>نُرسل هذا الإشعار لمن طلبوه فقط، بترتيب الطلب، قبل الإعلان العام بأربع وعشرين ساعة.</p><span class="cta cool">أضيفيها إلى السلة</span></div>
+          <div class="foot">تصلك هذه الرسالة لأنك مسجّل في الخدمة. إلغاء الاشتراك بضغطة واحدة من أسفل أي رسالة، ولا نرسل أكثر من رسالة واحدة في اليوم.</div>
+          <div class="tagrow"><span data-ar="عودة التوفر">Back in stock</span><span data-ar="آلي">Automated</span><span data-ar="لمن طلبها فقط">Requested only</span></div>
+        </article>
+      </div>
+    </div>
+
+    <div class="samplenote rv"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 8v5M12 16h.01"/></svg><p data-ar="نماذج مكتوبة لهذا الموقع لعرض الأسلوب: اللغة، والبنية، ومنطق التدفقات. الأسماء وأرقام الطلبات والمواعيد والعناوين توضيحية.">Samples written for this site to show the approach: the language, the structure and the flow logic. Names, order numbers, dates and addresses are illustrative.</p></div>
   </div>
 </section>
 
@@ -1020,4 +1240,5 @@ footer .wrap{display:flex;justify-content:space-between;flex-wrap:wrap;gap:12px}
 })();
 </script>
 
-</body></html>
+</body>
+</html>
